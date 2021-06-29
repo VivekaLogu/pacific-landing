@@ -1,0 +1,27 @@
+/* Customized Css */
+
+@media(min-width:992px) {
+    .navbar-nav .nav-link.active {
+        color:var(--text-primary-color) !important;
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: var(--border-primary-color);
+        text-underline-offset: 8px;
+    }
+    .shape-1::after {
+        content: '';
+        display: block;
+        height: 850px;
+        width: 850px;
+        background: url(../images/bg-banner.svg) no-repeat;
+        background-size: 100%;
+        background-position: right top;
+        position: absolute;
+        top: -25rem;
+        right: -18rem;
+        z-index: -1;
+    }
+    .title-xl:before {
+        font-size: 124px;
+    }
+}
