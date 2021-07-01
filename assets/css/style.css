@@ -58,14 +58,28 @@ button:focus {
     background-color: var(--bg-primary-color);
     color: var(--text-white-color) !important;
 }
+.btn--primary:hover {
+    background-color: var(--bg-transparent) !important;
+    color: var(--text-primary-color) !important;
+    border: 1px solid var(--border-primary-color);
+}
 .btn--primary-outline {
     border: 1px solid var(--border-primary-color);
     background-color: var(--bg-white-color);
-    color: var(--text-primary-color) !important;
+    color: var(--text-primary-color);
+}
+.btn--primary-outline:hover {
+    border: 1px solid var(--border-primary-color);
+    background-color:var(--bg-primary-color) !important;
+    color: var(--text-white-color);
 }
 .btn--accent {
     background-color: var(--bg-lightgreen);
     color: var(--text-primary-color);
+}
+.btn--accent:hover {
+    background-color: var(--bg-darkgreen);
+    color: var(--text-white-color);
 }
 .bg--palegreen {
     background-color: var(--bg-palegreen);
