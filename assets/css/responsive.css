@@ -1,5 +1,78 @@
 /* Customized Css */
-
+@media only screen and (max-width:991px) {
+    .floating--img {
+        display: none;
+    }
+    .timeline-row {
+        margin-left: 12px;
+    }
+    .timeline-row:before {
+        border-left-color: rgba(186, 188, 195, 0.3);
+    }
+    .timeline-row:before {
+        top: 0;
+        width: 0;
+        height: 100%;
+        border-left: 1px dashed rgba(186, 188, 195, 0.3);
+        border-bottom: none;
+    }
+    .timeline-item {
+        padding: 30px 25px 24px;
+    }
+    .timeline-item:before {
+        top: 0;
+        left: -1px;
+        height: 72px;
+    }
+    .timeline-item:before, .timeline-item:after {
+        width: 3px;
+    }
+    .timeline-date:before {
+        margin-left: -32px;
+        margin-bottom: 20px;
+    }
+    .timeline-date:after, .timeline-date:before {
+        left: 0;
+    }
+    .timeline-date:after {
+        margin-left: -30px;
+        margin-bottom: -5px;
+    }
+    .timeline-date:after, .timeline-date:before {
+        left: 0;
+    }
+    .timeline-title {
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .timeline-item:after {
+        top: 72px;
+        right: auto;
+        left: -1px;
+        height: calc(100% - 72px);
+    }
+    .timeline-item:before {
+        top: 0;
+        left: -1px;
+        height: 72px;
+    }
+    .timeline-row-even .timeline-item {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .timeline-row-even .timeline-item:before {
+        right: auto;
+        left: -1px;
+    }
+    .timeline-row-odd::after, .timeline-row-even::after {
+        border: none !important;
+    }
+    .timeline-row:before { border-bottom-color: rgba(186, 188, 195, 0.3); }
+    .timeline-row:after { border-color: rgba(186, 188, 195, 0.3); }
+    .nav-justified .nav-item, .nav-justified>.nav-link {
+        margin: .25rem;
+    }
+}
 @media(min-width:992px) {
     .navbar-nav .nav-link.active {
         color:var(--text-primary-color) !important;
@@ -21,7 +94,21 @@
         right: -18rem;
         z-index: -1;
     }
-    .title-xl:before {
-        font-size: 124px;
+    .floating--img {
+        bottom: 0;
+        right: 15%;
+        transform: translate(0%, 0%);
     }
+    .timeline-row-last > div >div .timeline-item > .timeline-date:before {
+        left: 3.5%
+    }
+    .timeline-row-last > div >div .timeline-item > .timeline-date {
+       padding-left: 1rem;
+    }
+    .timeline-date {
+        padding-left: 3rem;
+    }
+  
+    
+    
 }

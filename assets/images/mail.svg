@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.924" height="38.925" viewBox="0 0 38.924 38.925">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#c2d9e6;stroke-linecap:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_97" transform="translate(-223.5 -15368.5)">
+        <path id="Icon_feather-message-square" fill="none" stroke="#c2d9e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" d="M41.424 29.116a4.1 4.1 0 0 1-4.1 4.1H12.705L4.5 41.424V8.6a4.1 4.1 0 0 1 4.1-4.1h28.722a4.1 4.1 0 0 1 4.1 4.1z" transform="translate(220 15365)"/>
+        <g id="Group_95" transform="translate(0.5 1)">
+            <path id="Path_1272" d="M229.325 15378.436h20" class="cls-2" transform="translate(3.175)"/>
+            <path id="Path_1273" d="M229.325 15378.436h20" class="cls-2" transform="translate(3.175 9.527)"/>
+        </g>
+    </g>
+</svg>

@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Pacific DeFi New Financial Ecosystem</title>
   </head>
   <body>
+   
+    <!--BEGIN: Navbar-->
     <header class="header">
-    <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
               <img src="assets/logo.svg" alt="">
@@ -65,12 +67,13 @@
         </div>
       </nav>
     </header>
+    <!--END: Navbar-->
 
     <!-- BEGIN: Banner -->
-    <section class="banner shape-1 position-relative" >
+    <section class="banner shape-1 position-relative">
         <div class="container">
             <div class="row gy-5 align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="600">
                     <h5>Pacific DeFi New Financial Ecosystem</h5>
                     <h1 class="text--primary font-bold text-5xl lh-sm pb-3 pt-2">That unifies the current <br>scattered DeFi landscape</h1>
                     <p class="text--secondary font-regular fs-4">The goal of Pacific DeFi is to create an easy-to-use platform
@@ -81,18 +84,19 @@
                         <button type="button" class="btn btn--primary-outline btn-lg">How to Buy</button>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500"
+                data-aos-easing="linear">
                     <div class="d-flex justify-content-center align-items-center">
                         <img src="assets/images/banner.png" width="70%" class="img-fluid" alt="">
                     </div>                    
                 </div>                
             </div>
         </div>
-        <div class="container-fluid">
+        <!-- <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
               <div class="carousel d-flex align-items-center">
-                <div><img src="assets/images/clients/binance.svg" class="img-fluid"></div>
+                <div><img src="assets/images/clients/binance.svg" class="img-fluid" width="200"></div>
                 <div><img src="assets/images/clients/pancake-swap.svg" class="img-fluid"></div>
                 <div><img src="assets/images/clients/metamask.svg" class="img-fluid"></div>
                 <div><img src="assets/images/clients/trust-wallet.svg" class="img-fluid"></div>
@@ -101,19 +105,21 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
     </section>
     <!-- END: Banner -->
 
     <!-- BEGIN: About US -->
     <section class="aboutus">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="assets/images/about-us.png" width="80%" class="img-fluid" alt="">
+            <div class="row gy-4 align-items-center">
+                <div class="col-md-5" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="600" data-aos-duration="700">
+                    <img src="assets/images/about-us.png" width="100%" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-6">
-                    <h5 class="text-xl font-bold" title="About Us">About US</h5>
+                <div class="col-md-1"></div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600"
+                data-aos-easing="linear">
+                    <h5 class="text-xl font-bold">About Us</h5>
                     <h3 class="text--primary font-bold lh-sm pb-3 pt-2">Pacific DeFi aims to create a new
                         financial ecosystem that unifies the
                         current scattered DeFi landscape.</h3>
@@ -134,14 +140,14 @@
     <!-- BEGIN: Mission -->
     <section class="mission">
       <div class="container">
-          <div class="row align-items-center">
-              <div class="col-md-6">
+          <div class="row gx-5 align-items-center">
+              <div class="col-md-6" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="600" data-aos-duration="700">
                   <h5 class="title font-bold">Mission</h5>
                   <h3 class="text--primary font-bold lh-sm pb-3 pt-2">Pacific DeFi’s mission is to provide
                     an honest and fully transparent, &
                     decentralized, user-friendly platform.</h3>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="600" data-aos-duration="700">
                 <p class="text--secondary font-regular text-lg">It is in our belief that people should be in charge of their own
                   financial destiny and not be at the whim of traditional financial
                   institutions or governments. We want our token-holders to
@@ -155,7 +161,7 @@
     <!-- BEGIN: Products -->
     <section class="products">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
           <div class="col-md-7">
             <h5 class="text-xl font-bold text-center" title="Products">Products</h5>
             <h3 class="text--primary text-center font-bold lh-sm ls-sm pb-5 pt-2">We want our token-holders to reap the rewards of this
@@ -166,15 +172,18 @@
         <div class="row align-items-center">
           <div class="col-md-12">
             <!-- Nav tabs -->
-            <ul class="nav nav-pills nav-justified bg-white p-3 d-flex align-items-center rounded-md" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills nav-justified p-3 d-flex align-items-center justify-content-center rounded-md" id="pills-tab" role="tablist" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="900" data-aos-duration="900">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active font-bold text-base" id="pills-first-tab" data-bs-toggle="pill" data-bs-target="#pills-first" type="button" role="tab" aria-controls="pills-first" aria-selected="true">Liquidity Pool</button>
+                <button class="nav-link active font-bold text-base" id="pills-first-tab" data-bs-toggle="pill" data-bs-target="#pills-first" type="button" role="tab" aria-controls="pills-first" aria-selected="true">Yield aggregator and auto-compounding</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link font-bold text-base" id="pills-second-tab" data-bs-toggle="pill" data-bs-target="#pills-second" type="button" role="tab" aria-controls="pills-second" aria-selected="false">Lending and Borrowing</button>
+                <button class="nav-link font-bold text-base" id="pills-second-tab" data-bs-toggle="pill" data-bs-target="#pills-second" type="button" role="tab" aria-controls="pills-second" aria-selected="false">Staking</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link font-bold text-base" id="pills-third-tab" data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab" aria-controls="pills-third" aria-selected="false">Lottery Pool</button>
+                <button class="nav-link font-bold text-base" id="pills-third-tab" data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab" aria-controls="pills-third" aria-selected="false">Time Deposit Vaults</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link font-bold text-base" id="pills-third-tab" data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab" aria-controls="pills-third" aria-selected="false">Institutional Lending</button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link font-bold text-base" id="pills-fourth-tab" data-bs-toggle="pill" data-bs-target="#pills-fourth" type="button" role="tab" aria-controls="pills-fourth" aria-selected="false">Crypto Insurance</button>
@@ -183,7 +192,13 @@
                 <button class="nav-link font-bold text-base" id="pills-fifth-tab" data-bs-toggle="pill" data-bs-target="#pills-fifth" type="button" role="tab" aria-controls="pills-fifth" aria-selected="false">Crypto Asset Management</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link font-bold text-base" id="pills-sixth-tab" data-bs-toggle="pill" data-bs-target="#pills-sixth" type="button" role="tab" aria-controls="pills-sixth" aria-selected="false">P2P Instant Fiat</button>
+                <button class="nav-link font-bold text-base" id="pills-fifth-tab" data-bs-toggle="pill" data-bs-target="#pills-fifth" type="button" role="tab" aria-controls="pills-fifth" aria-selected="false">Proprietary DEX with Launchpad</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link font-bold text-base" id="pills-fifth-tab" data-bs-toggle="pill" data-bs-target="#pills-fifth" type="button" role="tab" aria-controls="pills-fifth" aria-selected="false">Venture Capital</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link font-bold text-base" id="pills-sixth-tab" data-bs-toggle="pill" data-bs-target="#pills-sixth" type="button" role="tab" aria-controls="pills-sixth" aria-selected="false">P2P Crypto / Fiat Platform</button>
               </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -191,7 +206,7 @@
                 <div class="container">
                   <div class="row align-items-center py-5">
                       
-                      <div class="col-md-6">
+                      <div class="col-md-6" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="600" data-aos-duration="700">
                           <h5 class="text-xl font-bold">Liquidity Pool</h5>
                           <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Liquidity pools are one of the
                             foundational technologies behind
@@ -205,7 +220,7 @@
                             basically funds thrown together in a big digital pile. But what
                             can you do with this pile in a permissionless environment.</p>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="600" data-aos-duration="700">
                         <div class="text-center">
                           <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                         </div>
@@ -239,9 +254,9 @@
     <!-- START: Tokenomics -->
     <section class="tokenomics">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-delay="800" data-aos-duration="900">
           <div class="col-md-7">
-            <h5 class="text-xl font-bold text-center" title="Tokenomics">Tokenomics</h5>
+            <h5 class="text-xl font-bold text-center">Tokenomics</h5>
             <h3 class="text--primary text-center font-bold lh-sm ls-sm pb-5 pt-2">Tokenomics token economics or crypto-economics study
               the economic institutions and policies of the distribution
               of goods and services that have been tokenized.</h3>
@@ -249,24 +264,25 @@
           <div class="col-md-12 text-center">
             <img src="assets/images/tokenomics.png" class="img-fluid" width="80%" alt="">
            
-            <div class="d-grid d-lg-flex justify-between align-items-center bg--palegreen p-4 my-5 rounded-md">
-              <div class="flex-md-grow-1">
-                <h3 class="text--accent font-bold pb-0">PACIFIC</h3>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-between align-items-center bg--palegreen p-4 my-5 rounded-md" 
+            data-aos="fade-dwon" data-aos-easing="linear" data-aos-delay="900" data-aos-duration="1000">
+              <div class="flex-grow-1 m-2">
+                <h3 class="text--accent font-bold mb-0">PACIFIC</h3>
                 <p class="text--secondary text-base font-bold text--dark mb-0 text-left">Token Symbol</p>
               </div>
-              <div class="flex-md-grow-1">
+              <div class="flex-grow-1 m-2">
                 <h3 class="text--accent font-bold mb-0">BEP-20</h3>
                 <p class="text--secondary text-base font-bold text--dark mb-0 text-left">Blockchain</p>
               </div>
-              <div class="flex-md-grow-1">
+              <div class="flex-grow-1 m-2">
                 <h3 class="text--accent font-bold mb-0">100,000,000</h3>
                 <p class="text--secondary text-base font-bold text--dark mb-0 text-left">Token Supply</p>
               </div>
-              <div class="flex-md-grow-1">
+              <div class="flex-grow-1 m-2">
                 <h3 class="text--accent font-bold mb-0">21st June 2021</h3>
                 <p class="text--secondary text-base font-bold text--dark mb-0 text-left">Token ILO Date</p>
               </div>
-              <div class="flex-md-grow-1">
+              <div class="flex-grow-1 m-2">
                 <h3 class="text--accent font-bold mb-0">24 Hours</h3>
                 <p class="text--secondary text-base font-bold text--dark mb-0 text-left">ILO Duration</p>
               </div>              
@@ -281,13 +297,13 @@
     <section class="token-utility">
       <div class="container">
         <div class="row align-items-center py-5">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1100">
                 <h5 class="title font-bold">Token Utility</h5>
                 <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">a digital token of cryptocurrency <br>
                   that is issued in order to fund <br>
                   development of the cryptocurrency </h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1100">
               <p class="text--secondary font-regular text-lg">a utility token is a blockchain-based asset people buy with the
                 intention to use for something in the future. As a simple example,
                 a company developing an online game could issue utility tokens
@@ -295,7 +311,7 @@
             </div>
         </div>
           <div class="row row-eq-height g-5">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
               <div class="token__card--border rounded bg-white p-4">
                 <div class="token__icon">
                   <img src="assets/images/token-utility/trading-fees.svg" width="50" height="50" alt="">
@@ -309,7 +325,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
               <div class="token__card--border rounded bg-white p-4">
                 <div class="token__icon">
                   <img src="assets/images/token-utility/staking.svg" width="50" height="50" alt="">
@@ -323,7 +339,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
               <div class="token__card--border rounded bg-white p-4">
                 <div class="token__icon">
                   <img src="assets/images/token-utility/tiers.svg" width="50" height="50" alt="">
@@ -337,7 +353,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
               <div class="token__card--border rounded bg-white p-4">
                 <div class="token__icon">
                   <img src="assets/images/token-utility/lending-borrowing.svg" width="50" height="50" alt="">
@@ -351,7 +367,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
               <div class="token__card--border rounded bg-white p-4">
                 <div class="token__icon">
                   <img src="assets/images/token-utility/insurance.svg" width="50" height="50" alt="">
@@ -365,7 +381,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
               <div class="token__card--border rounded bg-white p-4">
                 <div class="token__icon">
                   <img src="assets/images/token-utility/asset-management.svg" width="50" height="50" alt="">
@@ -379,7 +395,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
               <div class="token__card--border rounded bg-white p-4">
                 <div class="token__icon">
                   <img src="assets/images/token-utility/synthetic.svg" width="50" height="50" alt="">
@@ -393,7 +409,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
               <div class="token__card--border rounded bg-white p-4">
                 <div class="token__icon">
                   <img src="assets/images/token-utility/insurance.svg" width="50" height="50" alt="">
@@ -407,7 +423,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
               <div class="token__card--border rounded bg-white p-4">
                 <div class="token__icon">
                   <img src="assets/images/token-utility/asset-management.svg" width="50" height="50" alt="">
@@ -422,7 +438,6 @@
               </div>
             </div>
           </div>
-       
       </div>
     </section>
     <!-- END: Token Utility -->
@@ -431,12 +446,12 @@
     <section class="Roadmap">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-7">
+          <div class="col-md-7" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
             <h5 class="text-xl font-bold text-center" title="Roadmap">Roadmap</h5>
             <h3 class="text--primary text-center font-bold lh-sm ls-sm pb-5 pt-2">A roadmap is a strategic plan that defines a goal includes
               the major steps or milestones needed to reach it.</h3>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1200">
             <div class="timeline-row timeline-row-odd timeline-row-done">
               <div class="row no-gutters text-left text-lg-center justify-content-center">
                   <div class="col-lg">
@@ -567,7 +582,7 @@
     <!-- START: Our Team -->
     <section class="our-team">
       <div class="container">
-        <div class="row justify-content-center py-5">
+        <div class="row justify-content-center py-5" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="800">
           <div class="col-md-7">
             <h5 class="text-xl font-bold text-center">Our Core Team</h5>
             <h3 class="text--primary text-center font-bold lh-sm ls-sm pb-5 pt-2">A team is a group of individuals (human or non-human)
@@ -576,7 +591,7 @@
         </div>
           <div class="row row-eq-height g-5">
             <div class="col-md-4">
-              <div>
+              <div data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="800">
                 <img src="assets/images/team/sam-weil.png" class="card-img-top" alt="...">
                 <div class="card-body bg-white p-4">
                   <h5 class="font-bold text--darkgrey text-xl text-center">Sam Weil</h5>
@@ -589,7 +604,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div>
+              <div data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="900">
                 <img src="assets/images/team/iikay.png" class="card-img-top" alt="...">
                 <div class="card-body bg-white p-4">
                   <h5 class="font-bold text--darkgrey text-xl text-center">Ilkay</h5>
@@ -602,7 +617,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div>
+              <div data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1000">
                 <img src="assets/images/team/yokesh-sankar.png" class="card-img-top" alt="...">
                 <div class="card-body bg-white p-4">
                   <h5 class="font-bold text--darkgrey text-xl text-center">Yokesh Shankar</h5>
@@ -615,7 +630,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div>
+              <div data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1100">
                 <img src="assets/images/team/gowtham-paramasivam.png" class="card-img-top" alt="...">
                 <div class="card-body bg-white p-4">
                   <h5 class="font-bold text--darkgrey text-xl text-center">Gowtham Paramasivam</h5>
@@ -628,7 +643,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div>
+              <div data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1200">
                 <img src="assets/images/team/vinayak-rajgopalan.png" class="card-img-top" alt="...">
                 <div class="card-body bg-white p-4">
                   <h5 class="font-bold text--darkgrey text-xl text-center">Vinayak Rajagopalan</h5>
@@ -641,7 +656,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div>
+              <div data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
                 <img src="assets/images/team/lokesh-murali.png" class="card-img-top" alt="...">
                 <div class="card-body bg-white p-4">
                   <h5 class="font-bold text--darkgrey text-xl text-center">Lokesh Murali</h5>
@@ -661,9 +676,8 @@
       <!-- BEGIN: News Blogs -->
       <section class="news-blogs">
         <div class="container">
-            <div class="row align-items-center pb-5">
+            <div class="row align-items-center pb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
                 <div class="col-md-6">
-                    <!-- <h5 class="title font-bold">News Blogs</h5> -->
                     <h3 class="text--primary font-bold lh-sm pb-3 pt-2">Latest News & Blogs</h3>
                     <p class="text--darkgrey font-regular text-lg">You probably spend a lot of time creating the content
                       you publish on your blog. Obviously, creating great content.</p>
@@ -674,7 +688,7 @@
             </div>
             <div class="row row-eq-height g-5">
               <div class="col-md-4">
-                <div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
                   <img src="assets/images/blog/blog-1.png" class="card-img-top" alt="...">
                   <div class="card-body bg-white py-4">
                     <p class="font-bold text-base text--secondary">June 22, 2021</p>
@@ -690,7 +704,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
                   <img src="assets/images/blog/blog-2.png" class="card-img-top" alt="...">
                   <div class="card-body bg-white py-4">
                     <p class="font-bold text-base text--secondary">June 22, 2021</p>
@@ -706,7 +720,7 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
                   <img src="assets/images/blog/blog-3.png" class="card-img-top" alt="...">
                   <div class="card-body bg-white py-4">
                     <p class="font-bold text-base text--secondary">June 22, 2021 </p>
@@ -728,8 +742,8 @@
     <!-- START: FAQ -->
     <section class="faq">
       <div class="container">
-        <div class="row gx-5 py-5">
-            <div class="col-md-5">
+        <div class="row gx-5 py-5" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
+            <div class="col-md-5" >
                 <h5 class="title font-bold">FAQ</h5>
                 <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Frequently asked Questions </h3>
                 <p class="text--secondary font-regular text-lg">An FAQ is a list of commonly asked questions and
@@ -773,31 +787,31 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingFour">
-                    <button class="accordion-button collapsed ls-sm" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button collapsed ls-sm" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
                       Is it safe to use Pacific DeFi?
                     </button>
                   </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingFifth">
-                    <button class="accordion-button collapsed ls-sm" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button collapsed ls-sm" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifth" aria-expanded="false" aria-controls="flush-collapseThree">
                       What is the Pacific token?
                     </button>
                   </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFifth" data-bs-parent="#accordionFlushExample">
+                  <div id="flush-collapseFifth" class="accordion-collapse collapse" aria-labelledby="flush-headingFifth" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingSixth">
-                    <button class="accordion-button collapsed ls-sm" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button collapsed ls-sm" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixth" aria-expanded="false" aria-controls="flush-collapseThree">
                       What are all the relevant smart contract addresses?
                     </button>
                   </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingSixth" data-bs-parent="#accordionFlushExample">
+                  <div id="flush-collapseSixth" class="accordion-collapse collapse" aria-labelledby="flush-headingSixth" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                   </div>
                 </div>
@@ -810,9 +824,9 @@
 
     <!-- START: Tokenomics -->
     <section class="join-our-community">
-      <div class="container">
-        <div class="row bg--palegreen p-4 rounded-md">
-          <div class="col-md-6">
+      <div class="container pt-4">
+        <div class="row bg--palegreen p-4 rounded-md position-relative">
+          <div class="col-md-6" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
             <h3 class="text--primary font-bold lh-sm ls-sm pt-2">To know the Latest Update in
               development Join our Community</h3>
               <p class="text-base text--secondary font-regular">Learn more about us or Read the whitepaper for a deep dive  </p>
@@ -821,20 +835,111 @@
                 <button type="button" class="btn btn--primary-outline bg--transparent btn-lg ml-4 px-4">How to Buy</button>
               </div>
             </div>
-          <div class="col-md-6">
-            
+          <div class="col-md-6" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
+            <img src="assets/images/community.png" width="250" class="position-absolute floating--img" alt="">
           </div>                
         </div>
       </div>
     </section>
     <!-- END: Tokenomics -->
+    <section class="contact-us bg-white pt-0 pb-0">
+      <div class="container">
+        <div class="row row-eq-height g-0" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
+          <div class="col-sm-5">
+            <div class="p-4 px-5 bg--darkgreen rounded-md-l">
+              <h5 class="text-xl font-bold">Contact Us</h5>
+              <h3 class="text-white font-bold lh-sm ls-sm">Get in Touch</h3>
+              <p class="font-regular text-base text--lightgreen">Have an inquiry or some feedback for us?
+                Fill out the form below to contact our team?</p>
+                <div>
+                  <img src="assets/images/phone.svg" width="20" alt="">
+                  <span class="text-white text-lg font-regular">&nbsp; +852 6602 5033</span>
+                </div>
+                <div class="mt-3">
+                  <img src="assets/images/mail.svg" width="20" alt="">
+                  <span class="text-white text-lg font-regular">&nbsp; contact@pacific.com</span>
+                </div>
+                <!-- <div class="h-auto"></div> -->
+                <div class="d-flex mh-100 mt-auto h-50 pb-5 align-items-end justify-content-between">
+                  <img src="assets/images/facebook.svg" width="30" alt="">
+                  <img src="assets/images/twitter.svg" width="30" alt="">
+                  <img src="assets/images/linkedin.svg" width="30" alt="">
+                  <img src="assets/images/telegram.svg" width="30" alt="">
+                  <img src="assets/images/youtube.svg" width="30" alt="">
+                  <img src="assets/images/github.svg" width="30" alt="">
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="p-4 px-5 bg--secondary rounded-md-r">
+              <h3 class="text--primary font-bold lh-sm ls-sm">Send Us a Message</h3>
+              <form class="row g-3 mt-2 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="inputName" class="form-label font-regular">Full Name</label>
+                  <input type="text" class="form-control text--secondary font-regular" id="inputName" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please Enter Your Name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail" class="form-label font-regular">Email</label>
+                  <input type="email" class="form-control text--secondary font-regular" id="inputEmail" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please Enter your Email.</div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label font-regular">Message</label>
+                  <textarea class="form-control text--secondary font-regular" id="message" placeholder="Write your message....." rows="4" required></textarea>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                
+                <div class="col-12 mt-5">
+                  <button type="submit" class="btn btn--primary text-base text-white btn-lg float-end">Send message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+
+    <section class="footer">
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-md-5" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
+            <p class="text--secondary text-base lh-md font-regular">
+              ©2021 C-Pacific Ventures Limited. All Rights Reserved</p>
+              <p class="text--secondary text-base lh-md font-regular">Pacific DeFi is a wholly-owned subsidiary of <span class="font-bold">C-Pacific
+              Ventures Limited,  which is Registered in the British
+              Virgin Islands (BVI Reg No: 2064935). </span>
+            </p>
+          </div>
+          <div class="col-md-7" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="1300">
+            <p class="text--darkgrey text-base font-bold">Disclaimer:</p>
+            <p class="text--secondary text-base font-regular lh-md">Pacific DeFi is not marketed to individuals or entities located in
+            countries where DeFi investments are regulated. Investing in
+            cryptocurrency projects comes with risk for loss of capital and prior
+            success or earnings can not be used as a guaranteed indication of 
+            future success or investment results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+       $(window).on('load', function () {
+                $("#preloader").hide().fadeOut();
+            });
+    </script>
   </body>
 </html>
