@@ -72,6 +72,19 @@
     .nav-justified .nav-item, .nav-justified>.nav-link {
         margin: .25rem;
     }
+    .rounded-md-l {
+       border-top-left-radius: .75rem;
+       border-top-right-radius: .75rem;
+       border-bottom-left-radius: 0;
+    }
+    .rounded-md-r {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+    }
+    .h-50 {
+        height: 40%!important;
+    }
 }
 @media(min-width:992px) {
     .navbar-nav .nav-link.active {
@@ -108,7 +121,14 @@
     .timeline-date {
         padding-left: 3rem;
     }
-  
+    .rounded-md-l {
+        border-top-left-radius: .75rem;
+        border-bottom-left-radius: .75rem;
+    }
+    .rounded-md-r {
+        border-top-right-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+    }
     
     
 }

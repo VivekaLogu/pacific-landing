@@ -239,8 +239,20 @@ ul, li {
 .token__card--border {
     border: 1px solid var(--border-card);
 }
+.token__card--border:hover {
+    /* background: var(--bg-palegreen) !important; */
+    /* box-shadow: 0px 5px 15px rgb(0 0 0 / 20%); */
+    transform: scale(1.02);
+    border: 2px solid var(--border-primary-color);
+    /* color: var(--text-primary-color) !important; */
+    transition: transform .3s;
+}
 .token__info {
     padding: 1rem 0 0;
+}
+
+.token__info > p {
+    color: var(--text-secondary-color);
 }
 .row-eq-height >div {
     display: -webkit-box;
