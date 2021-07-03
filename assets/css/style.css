@@ -18,9 +18,6 @@
     --border-card: #c4c4c4;
     --bg-transparent: transparent;
 }
-html {
-    max-width: 100vw;
-}
 @font-face {
     font-family: Proxima-Nova-Bold;
     src: url(../font/Proxima-Nova-Bold.ttf);
@@ -62,6 +59,10 @@ section:nth-child(2n+1),
 .text--dark {
     color: var(--text-darkgrey-color);
 }
+.btn--hover:hover{
+    color: var(--text-white-color) !important;
+    text-decoration: none !important;
+}
 
 button:focus {
     outline: none !important;
@@ -82,13 +83,13 @@ button:focus {
 .btn--primary-outline {
     border: 1px solid var(--border-primary-color);
     background-color: var(--bg-white-color);
-    color: var(--text-primary-color);
+    color: var(--text-primary-color) !important;
 }
 
 .btn--primary-outline:hover {
     border: 1px solid var(--border-primary-color);
     background-color: var(--bg-primary-color) !important;
-    color: var(--text-white-color);
+    color: var(--text-white-color) !important;
 }
 
 .btn--accent {
@@ -728,4 +729,7 @@ li {
     to {
         transform: rotate(360deg);
     }
+}
+a {
+    text-decoration: none !important;
 }
