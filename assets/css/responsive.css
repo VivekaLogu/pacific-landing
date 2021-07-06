@@ -144,3 +144,39 @@
         border-bottom-right-radius: .75rem;
     }
 }
+/*home page */
+@media(max-width:767px){
+    section {
+        padding: 1.25rem 0;
+    }
+    .shape-1::after {
+        content:'';
+        display: none;
+        height: 850px;
+        width: 850px;
+        background: url(../images/bg-banner.svg) no-repeat;
+        background-size: 100%;
+        background-position: right top;
+        position: absolute;
+        top: -25rem;
+        right: -18rem;
+        z-index: -1;
+    }
+    .text-5xl {
+        font-size: 2rem;
+    }
+    py-5{
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .timeline-item {
+        padding: 15px 25px 10px;
+    }
+    .slick-dots {
+        bottom: -37px;
+    }
+    .slick-slider {
+        margin-top: 2rem;
+        margin-bottom: 2rem !important;
+    }
+}
