@@ -143,7 +143,7 @@
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
-        font-size: 1.35rem;
+        font-size: 1.15rem;
     }
     .shape-1::after {
         content: '';
@@ -217,6 +217,9 @@
     .second{
         order: 1;
     }
+    .feauture-sup{
+        text-align: left;
+    }
 }
 @media(max-width:575px){
     .btn-space{
@@ -224,5 +227,8 @@
     }
     .aligned-btn{
         text-align: center;
+    }
+    .timeline-info {
+        padding-left: 0;
     }
 }
