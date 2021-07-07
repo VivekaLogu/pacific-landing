@@ -581,7 +581,10 @@ li {
 }
 
 .timeline-info li {
-    color: var(--text-secondary-color)
+    color: var(--text-secondary-color);
+    color: var(--text-secondary-color);
+    margin-bottom: 10px;
+    line-height: 23px;
 }
 
 .timeline-info li:after {
