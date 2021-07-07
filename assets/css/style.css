@@ -18,6 +18,9 @@
     --border-card: #c4c4c4;
     --bg-transparent: transparent;
 }
+body{
+    overflow-x: hidden;
+}
 @font-face {
     font-family: Proxima-Nova-Bold;
     src: url(../font/Proxima-Nova-Bold.ttf);
@@ -551,6 +554,8 @@ li {
 .timeline-title {
     padding-left: 2rem;
     text-align: left;
+    margin-bottom: 18px;
+    line-height: 24px;
 }
 
 .timeline-row-last:after {
@@ -732,4 +737,35 @@ li {
 }
 a {
     text-decoration: none !important;
+}
+.btn-align{
+    text-align: right;
+}
+.align-join-community{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.btn-space{
+    margin:0 0 0 10px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 1.5rem;
+}
+.mailer{
+    color:#fff !important;
+}
+.shape-1::after {
+    content: '';
+    display: block;
+    height: 900px;
+    width: 1006px;
+    background: url(../images/bg-banner.svg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: -18rem;
+    right: -23rem;
+    z-index: -1;
 }
