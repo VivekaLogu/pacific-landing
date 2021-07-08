@@ -296,6 +296,7 @@ li {
     border: 1px solid var(--border-card);
     padding: .75rem 1.5rem;
     border-radius: .5rem;
+    text-transform: capitalize;
 }
 
 .nav-justified .nav-item,
@@ -780,6 +781,7 @@ a {
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 1.5rem;
+    z-index:2;
 }
 .mailer{
     color:#fff !important;
