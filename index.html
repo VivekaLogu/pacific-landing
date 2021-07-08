@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/logo.svg" alt="">
+                    <img src="assets/logo.svg" class="logo"alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,31 +35,31 @@
                             <a class="nav-link  active text-prime" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">About</a>
+                            <a class="nav-link " href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Product</a>
+                            <a class="nav-link " href="#features">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Tokenomics</a>
+                            <a class="nav-link " href="#tokenomics">Tokenomics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Utility</a>
+                            <a class="nav-link " href="#utility">Utility</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Roadmap</a>
+                            <a class="nav-link " href="#roadmap">Roadmap</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
+                            <a class="nav-link" href="#team">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="#news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="#faqs">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                     <div class="d-flex">
@@ -84,8 +84,9 @@
                     </p>
                     <div class="mt-5">
                        <div class="aligned-btn">
-                        <button type="button" class="btn btn--accent btn-lg mr-4 mb-3">WhitePaper</button>
-                        <button type="button" class="btn btn--primary-outline btn-lg mb-3">How to Buy</button>
+                        <button type="button" class="btn btn--primary text-white btn-lg px-3 mr-4 mb-3 ">whitepaper</button>
+                        <button type="button" class="btn btn--accent btn-lg mr-4 mb-3 px-3">How to Buy</button>                        
+                        <button type="button" class="btn btn--primary-outline btn-lg mb-3 px-5"><a href="https://solidity.finance/audits/PacificCoin/" target="_blank" class="text-primaty">Solidity</a></button>
                        </div>
                     </div>
                 </div>
@@ -114,11 +115,23 @@
     <!-- END: Banner -->
 
     <!-- BEGIN: About US -->
-    <section class="aboutus">
+    <section class="aboutus" id="about">
         <div class="container">
             <div class="row gy-4 align-items-center">
                 <div class="col-md-5" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="linear">
-                    <img src="assets/images/about-us.png" width="100%" class="img-fluid" alt="">
+                    <div class="about-video">
+                        <img src="assets/images/about-us.png" width="100%" class="img-fluid" alt="">
+                        <div class="youtube-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 170.439 119.365">
+                                <g>
+                                    <g>
+                                        <path fill="red" d="M168.494 19.092A21.424 21.424 0 0 0 153.41 4.007C140.183.4 86.95.4 86.95.4S33.717.509 20.49 4.116A21.424 21.424 0 0 0 5.406 19.2c-4 23.5-5.553 59.311.109 81.872A21.424 21.424 0 0 0 20.6 116.158c13.226 3.607 66.46 3.607 66.46 3.607s53.233 0 66.46-3.607a21.424 21.424 0 0 0 15.08-15.085c4.223-23.534 5.524-59.322-.106-81.981z" transform="translate(-497 -2029) translate(497 2029) translate(-1.817 -0.4)"/>
+                                        <path fill="#fff" d="M64.2 82.756l44.161-25.578L64.2 31.6z" transform="translate(-497 -2029) translate(497 2029) translate(3.99 2.504)"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6">
@@ -174,12 +187,12 @@
     <!-- END: Mission -->
 
     <!-- BEGIN: Products -->
-    <section class="products">
+    <section class="products" id="features">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-7">
-                    <h5 class="text-xl font-bold text-center">Features</h5>
-                    <h3 class="text--primary text-center font-bold lh-sm ls-sm pb-5 pt-2">We want our token-holders to reap the rewards of this new financial revolution, where
+                    <h5 class="text-xl font-bold feauture-sup">Features</h5>
+                    <h3 class="text--primary feauture-sup font-bold lh-sm ls-sm pb-5 pt-2">We want our token-holders to reap the rewards of this new financial revolution, where
                         anyone can be in charge of their financial destiny</h3>
                 </div>
             </div>
@@ -265,8 +278,7 @@
                                             is BNB/CAKE.
                                             </p>
                                         <p class="text--secondary font-regular text-lg">LPs providing liquidity to the pool will get rewards in CAKE as part of PancakeSwap’s token
-                                            emission rewards, plus a share of the transaction fees generated from BNB/CAKE trade
-                                            swaps
+                                            emission rewards, plus a share of the transaction fees generated from BNB/CAKE trade swaps.
                                             </p>
                                         <p class="text--secondary font-regular text-lg">Traditionally, users who receive newly minted CAKE rewards need to convert CAKE into
                                             equal values of BNB and CAKE to stake LP tokens again in the BNB/CAKE LP to earn more
@@ -344,10 +356,10 @@
                                 <div class="row align-items-center py-5">
                                     
                                     <div class="col-md-6">
-                                        <h5 class="text-xl font-bold">Institutional lending
+                                        <h5 class="text-xl font-bold">Institutional Lending
                                         </h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Uncollateralized lending</h3>
-                                        <p class="text--secondary font-regular text-lg">A majority of DeFI projects have been built on collateralized lending, where users must first
+                                        <p class="text--secondary font-regular text-lg">A majority of DeFi projects have been built on collateralized lending, where users must first
                                             pledge their assets before they can borrow against them.
                                         </p>
 
@@ -376,7 +388,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6 second">
-                                        <h5 class="text-xl font-bold">Crypto insurance</h5>
+                                        <h5 class="text-xl font-bold">Crypto Insurance</h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Protocol insurance</h3>
                                         <p class="text--secondary font-regular text-lg">Blockchain’s ability to create trust in a trustless ecosystem via public ledgers and fortified
                                             cybersecurity protocols is extremely positive for the insurance industry's future growth. It
@@ -386,8 +398,7 @@
                                         <p class="text--secondary font-regular text-lg">Distributed Ledger Technology (DLT) has beneficial applications for streamlining insurance
                                             claims processing and boosting cybersecurity protocols, which is why Pacific DeFi will create
                                             insurance products for the crypto-financial ecosystem, by taking yields via insuring trading
-                                            positions or against hacking/scams
-                                            </p>
+                                            positions or against hacking/scams.</p>
                                     </div>
                                     
                                 </div>
@@ -425,7 +436,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6 second">
-                                        <h5 class="text-xl font-bold">Proprietary DEX with launchpad</h5>
+                                        <h5 class="text-xl font-bold">Proprietary DEX with Launchpad</h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Swaps</h3>
                                         <p class="text--secondary font-regular text-lg">Users can easily swap tokens on Pacific DeFi’s proprietary DEX so that there is no need to
                                             leave the platform to obtain LP tokens.
@@ -435,7 +446,7 @@
                                             another external platform to make swaps.
                                         </p>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Launchpad</h3>
-                                        <p class="text--secondary font-regular text-lg">UPacific DeFi will empower crypto projects with the ability to distribute tokens and raise the
+                                        <p class="text--secondary font-regular text-lg">Pacific DeFi will empower crypto projects with the ability to distribute tokens and raise the
                                             necessary liquidity in order to fund promising projects in the DeFi space.
                                         </p>
 
@@ -456,7 +467,7 @@
                                     
                                     <div class="col-md-6">
                                         <h5 class="text-xl font-bold">Venture Capital </h5>
-                                        <!-- <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Retail asset management</h3> -->
+                                        <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Venture Capital Funds</h3>
                                         <p class="text--secondary font-regular text-lg">Pacific DeFi will create a VC arm to support and invest in distributed ledger technology (DLT)
                                             projects that advance the DeFi industry and provide a positive societal impact.
                                         </p>
@@ -481,12 +492,12 @@
     <!-- END: Products -->
 
     <!-- START: Tokenomics -->
-    <section class="tokenomics">
+    <section class="tokenomics" id="tokenomics">
         <div class="container">
             <div class="row justify-content-center" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="900">
                 <div class="col-md-7">
-                    <h5 class="text-xl font-bold text-center">Tokenomics</h5>
-                    <h3 class="text--primary text-center font-bold lh-sm ls-sm pb-5 pt-2">The Pacific DeFi token is the native asset of our ecosystem. Users are able to
+                    <h5 class="text-xl font-bold feauture-sup">Tokenomics</h5>
+                    <h3 class="text--primary feauture-sup font-bold lh-sm ls-sm pb-5 pt-2">The Pacific DeFi token is the native asset of our ecosystem. Users are able to
                         participate in the growth of our platform and earn fees from the different business
                         lines by holding PACIFIC</h3>
                 </div>
@@ -522,7 +533,7 @@
     <!-- END: Tokenomics -->
 
     <!-- START: Token Utility -->
-    <section class="token-utility">
+    <section class="token-utility" id="utility">
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-6">
@@ -653,12 +664,12 @@
     <!-- END: Token Utility -->
 
     <!-- START: Roadmap -->
-    <section class="Roadmap">
+    <section class="Roadmap" id="roadmap">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-7">
-                    <h5 class="text-xl font-bold text-center" title="Roadmap">Roadmap</h5>
-                    <h3 class="text--primary text-center font-bold lh-sm ls-sm pb-5 pt-2">A roadmap is a strategic plan that defines a goal includes the major steps or milestones needed to reach it.</h3>
+                    <h5 class="text-xl font-bold feauture-sup" title="Roadmap">Roadmap</h5>
+                    <h3 class="text--primary feauture-sup font-bold lh-sm ls-sm pb-5 pt-2">A roadmap is a strategic plan that defines a goal includes the major steps or milestones needed to reach it.</h3>
                 </div>
                 <div class="col-md-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200">
                     <div class="timeline-row timeline-row-odd timeline-row-done">
@@ -673,17 +684,17 @@
                                         <li>• Private & Public Sale</li>
                                         <li>• Listing on <strong>CoinMarketCap, CoinGecko, Dappadar</strong></li>
                                         <li>• Audits from Hacken, <strong>TechRate</strong></li> -->
-                                        <li>•Platform design and protocol development</li>
-                                        <li>•Internal audit of smart contract code via Solidity.Finance</li>
-                                        <li>•Whitepaper release and distribution</li>
-                                        <li>•Pacific DeFi investor presentation deck - translated in Chinese and Turkish</li>
-                                        <li>•Private Sale through investor network</li>
-                                        <li>•Online community building on Twitter, Telegram, and Medium</li>
-                                        <li>•Creation of daily blog content that introduces newcomers to the world of DeFi</li>
-                                        <li>•Pre-sale via DEX/launchpad/STO</li>
-                                        <li>•Listing on <strong>CoinMarketCap, CoinGecko, Dappadar</strong></li>
-                                        <li>•Audits from Hacken, Certik for auto-compound and yield aggregator features</li>
-                                        <li>•Go live on DEX PancakeSwap</li>
+                                        <li>Platform design and protocol development</li>
+                                        <li>Internal audit of smart contract code via Solidity.Finance</li>
+                                        <li>Whitepaper release and distribution</li>
+                                        <li>Pacific DeFi investor presentation deck - translated in Chinese and Turkish</li>
+                                        <li>Private Sale through investor network</li>
+                                        <li>Online community building on Twitter, Telegram, and Medium</li>
+                                        <li>Creation of daily blog content that introduces newcomers to the world of DeFi</li>
+                                        <li>Pre-sale via DEX/launchpad/STO</li>
+                                        <li>Listing on CoinMarketCap, CoinGecko, Dappadar</li>
+                                        <li>Audits from Hacken, Certik for auto-compound and yield aggregator features</li>
+                                        <li>Go live on DEX PancakeSwap</li>
                                     </ul>
                                 </div>
                             </div>
@@ -697,12 +708,12 @@
                                         <li>• Audit by <strong>Certik</strong></li>
                                         <li>• Treasury fund report - Showcase token burning and buybacks</li>
                                         <li> • Development of proprietary DEX</li> -->
-                                        <li>•Liquidity mining process begins (farming period of 200 days) with auto-compound feature on popular PancakeSwap pairs</li>
-                                        <li>•Lottery goes live with a separate Telegram channel to engage with the community</li>
-                                        <li>•Partnership with Defi tools provider to enable live analytics dashboard on platform</li>
-                                        <li>•Partnerships with YouTube influencers to promote the offering</li>
-                                        <li>•Continue to build online community via Twitter, Telegram, and Medium</li>
-                                        <li>•Development of proprietary DEX and swap features</li>
+                                        <li>Liquidity mining process begins (farming period of 200 days) with auto-compound feature on popular PancakeSwap pairs</li>
+                                        <li>Lottery goes live with a separate Telegram channel to engage with the community</li>
+                                        <li>Partnership with Defi tools provider to enable live analytics dashboard on platform</li>
+                                        <li>Partnerships with YouTube influencers to promote the offering</li>
+                                        <li>Continue to build online community via Twitter, Telegram, and Medium</li>
+                                        <li>Development of proprietary DEX and swap features</li>
                                     </ul>
                                 </div>
                             </div>
@@ -715,11 +726,11 @@
                                         <!-- <li>• Lending and borrowing capability on Binance Smart Chain (BSC)</li>
                                         <li>• Start building the Pacific DeFi mobile app</li>
                                         <li>• Cross-chain development of lending and borrowing capability</li> -->
-                                        <li>•Cross-chain development of auto-compounding features on Polygon, HECO, and Ethereum</li>
-                                        <li>•Creation of a YouTube channel that discusses our project and the benefits of DeFi to the growing community</li>
-                                        <li>•Begin the development of uncollateralised crypto lending platform for retail and institutional clients. Continue to expand the client base to new geographic regions</li>
-                                        <li>•Continued marketing of the Pacific DeFi ecosystem via paid advertising channels</li>
-                                        <li>•Start developing the Pacific DeFi mobile app for Android and iOS operating systems</li>
+                                        <li>Cross-chain development of auto-compounding features on Polygon, HECO, and Ethereum</li>
+                                        <li>Creation of a YouTube channel that discusses our project and the benefits of DeFi to the growing community</li>
+                                        <li>Begin the development of uncollateralised crypto lending platform for retail and institutional clients. Continue to expand the client base to new geographic regions</li>
+                                        <li>Continued marketing of the Pacific DeFi ecosystem via paid advertising channels</li>
+                                        <li>Start developing the Pacific DeFi mobile app for Android and iOS operating systems</li>
                                     </ul>
                                 </div>
                             </div>
@@ -747,11 +758,11 @@
                                         <!-- <li>• Development of insurance platform on the BSC</li>
                                         <li>• Provide insurance for Users on other 3rd party platforms</li>
                                         <li>• Further development on Pacific DeFi mobile app</li> -->
-                                        <li>•Development of insurance platform on the BSC with technology partners</li>
-                                        <li>•Marketing of insurance platform on Telegram and Twitter with PR press release via marketing partners</li>
-                                        <li>•Cross-chain development of insurance capability</li>
-                                        <li>•Strategic partnerships to provide insurance to users on other 3rd party platforms</li>
-                                        <li>•Further development on Pacific DeFi mobile app</li>
+                                        <li>Development of insurance platform on the BSC with technology partners</li>
+                                        <li>Marketing of insurance platform on Telegram and Twitter with PR press release via marketing partners</li>
+                                        <li>Cross-chain development of insurance capability</li>
+                                        <li>Strategic partnerships to provide insurance to users on other 3rd party platforms</li>
+                                        <li>Further development on Pacific DeFi mobile app</li>
                                     </ul>
                                 </div>
                             </div>
@@ -764,10 +775,10 @@
                                         <!-- <li> • Mobile beta-app released to the community</li>
                                         <li>• Social Media Marketing for Mobile App</li>
                                         <li>• Community-given feedback and improvements made</li> -->
-                                        <li>•Mobile beta-app released to the Pacific DeFi community</li>
-                                        <li>•Community-given feedback and improvements made</li>
-                                        <li>•Mobile app marketing via social media channels, YouTube influencers, and marketing partners</li>
-                                        <li>•The first version of the mobile app released to the Pacific DeFi community</li>
+                                        <li>Mobile beta-app released to the Pacific DeFi community</li>
+                                        <li>Community-given feedback and improvements made</li>
+                                        <li>Mobile app marketing via social media channels, YouTube influencers, and marketing partners</li>
+                                        <li>The first version of the mobile app released to the Pacific DeFi community</li>
                                     </ul>
                                 </div>
                             </div>
@@ -780,11 +791,11 @@
                                         <!-- <li> • Creation of tailor-made funds</li>
                                         <li> • Cross-chain development of asset management capability</li>
                                         <li> • Social Media Marketing for Asset Management Platform</li> -->
-                                        <li>•Creation of tailor-made funds with the input from our community in deciding which assets are of most interest and the asset allocation strategy of the fund</li>
-                                        <li>•Cross-chain development of capital markets capability</li>
-                                        <li>•Development of leveraged financial products and derivatives via strategic partnerships with existing specialist projects</li>
-                                        <li>•Development of stablecoin $USDPACIFIC</li>
-                                        <li>•Development of crypto bond issuance platform and pooled fixed income products</li>
+                                        <li>Creation of tailor-made funds with the input from our community in deciding which assets are of most interest and the asset allocation strategy of the fund</li>
+                                        <li>Cross-chain development of capital markets capability</li>
+                                        <li>Development of leveraged financial products and derivatives via strategic partnerships with existing specialist projects</li>
+                                        <li>Development of stablecoin $USDPACIFIC</li>
+                                        <li>Development of crypto bond issuance platform and pooled fixed income products</li>
                                     </ul>
                                 </div>
                             </div>
@@ -803,11 +814,11 @@
                                         <!-- <li>• Registration of corporate entity in targeted launch country</li>
                                         <li>• Receive regulatory approvals & licenses</li>
                                         <li>• Social Media Platform to increase Awareness</li> -->
-                                        <li>•Registration of corporate entity in targeted launch country</li>
-                                        <li>•Begin regulatory due diligence and applications in targeted launch country</li>
-                                        <li>•Receive regulatory approvals and licenses</li>
-                                        <li>•Develop iOS and Android versions of the platform</li>
-                                        <li>•Use of local marketing mediums to increase awareness of usage of the platform</li>
+                                        <li>Registration of corporate entity in targeted launch country</li>
+                                        <li>Begin regulatory due diligence and applications in targeted launch country</li>
+                                        <li>Receive regulatory approvals and licenses</li>
+                                        <li>Develop iOS and Android versions of the platform</li>
+                                        <li>Use of local marketing mediums to increase awareness of usage of the platform</li>
 
                                     </ul>
                                 </div>
@@ -827,12 +838,12 @@
     <!-- END: Roadmap -->
 
     <!-- START: Our Team -->
-    <section class="our-team">
+    <section class="our-team" id="team">
         <div class="container">
             <div class="row justify-content-center py-5">
                 <div class="col-md-9">
-                    <h5 class="text-xl font-bold text-center">Our Core Team</h5>
-                    <h3 class="text--primary text-center font-semibold lh-sm ls-sm pb-5 pt-2">We are a group of passionate people united with our mission to democratize finance. Our
+                    <h5 class="text-xl font-bold feauture-sup">Our Core Team</h5>
+                    <h3 class="text--primary feauture-sup font-semibold lh-sm ls-sm pb-5 pt-2">We are a group of passionate people united with our mission to democratize finance. Our
                         team believes that everyone – across income and educational background – should have
                         access to products that can help them save and invest towards a better future </h3>
                 </div>
@@ -876,92 +887,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="col-md-4">
-                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1100">
-                        <img src="assets/images/team/gowtham-paramasivam.png" class="card-img-top" alt="...">
-                        <div class="card-body bg-white p-4">
-                            <h5 class="font-bold text--darkgrey text-xl text-center">Gowtham Paramasivam</h5>
-                            <p class="font-regular text-base text--secondary text-center">Blockchain Architect</p>
-                            <div class="text-center">
-                                <i class="fab fa-twitter text-2xl"></i> 
-                                <i class="fab fa-linkedin text-2xl"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-4">
-                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200">
-                        <img src="assets/images/team/vinayak-rajgopalan.png" class="card-img-top" alt="...">
-                        <div class="card-body bg-white p-4">
-                            <h5 class="font-bold text--darkgrey text-xl text-center">Vinayak Rajagopalan</h5>
-                            <p class="font-regular text-base text--secondary text-center">Tokenomics Specialist</p>
-                            <div class="text-center">
-                               <i class="fab fa-twitter text-2xl"></i> 
-                                <i class="fab fa-linkedin text-2xl"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-4">
-                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1300">
-                        <img src="assets/images/team/lokesh-murali.png" class="card-img-top" alt="...">
-                        <div class="card-body bg-white p-4">
-                            <h5 class="font-bold text--darkgrey text-xl text-center">Lokesh Murali</h5>
-                            <p class="font-regular text-base text--secondary text-center">UI/UX Architect</p>
-                            <div class="text-center">
-                                <i class="fab fa-twitter text-2xl"></i> 
-                                <i class="fab fa-linkedin text-2xl"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-4">
-                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1100">
-                        <img src="assets/images/avatar.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-white p-4">
-                            <h5 class="font-bold text--darkgrey text-xl text-center">Gowtham Paramasivam</h5>
-                            <p class="font-regular text-base text--secondary text-center">Blockchain Architect</p>
-                            <div class="text-center">
-                               <i class="fab fa-twitter text-2xl"></i> 
-                                <i class="fab fa-linkedin text-2xl"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-4">
-                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200">
-                        <img src="assets/images/avatar.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-white p-4">
-                            <h5 class="font-bold text--darkgrey text-xl text-center">Vinayak Rajagopalan</h5>
-                            <p class="font-regular text-base text--secondary text-center">Tokenomics Specialist</p>
-                            <div class="text-center">
-                                <i class="fab fa-twitter text-2xl"></i> 
-                                <i class="fab fa-linkedin text-2xl"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-4">
-                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1300">
-                        <img src="assets/images/avatar.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-white p-4">
-                            <h5 class="font-bold text--darkgrey text-xl text-center">Lokesh Murali</h5>
-                            <p class="font-regular text-base text--secondary text-center">UI/UX Architect</p>
-                            <div class="text-center">
-                                <i class="fab fa-twitter text-2xl"></i>
-                                <i class="fab fa-linkedin text-2xl"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                </div>                
             </div>
         </div>
     </section>
     <!-- END: Our Team -->
 
     <!-- BEGIN: News Blogs -->
-    <section class="news-blogs">
+    <section class="news-blogs" id="news">
         <div class="container">
             <div class="row align-items-center pb-5">
                 <div class="col-md-6">
@@ -977,57 +910,52 @@
                 </div>
             </div>
             <div class="row row-eq-height g-4">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
-                        <img src="assets/images/blog/blog-1.png" class="card-img-top" alt="...">
+                        <a href="https://pacificdefi.medium.com/pacific-defi-roadmap-the-way-forward-326b39937b80" target="_blank">
+                            <img src="assets/images/blog/blog-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-white py-4">
-                            <p class="font-bold text-base text--secondary">June 22, 2021</p>
-                            <h5 class="font-bold text--darkgrey text-xl">WHAT ARE THE BEST CRYPTOCURRENCIES TO BUY?
-                            </h5>
+                            <p class="font-bold text-base text--secondary">June 29, 2021</p>
+                            <h5 class="font-bold textgrey text-xl">Pacific DeFi Roadmap — The Way Forward</h5>
                             <div>
-                                <p class="text-base text--secondary font-regular line-clamp">Cryptocurrencies are still attracting investors with regular headlines around the values and insane Cryptocurrencies</p>
+                                <p class="text-base text--secondary font-regular line-clamp">Pacific DeFi is on a mission to provide a fully transparent,
+                                    decentralized, and user-friendly platform for all segments of the
+                                    financial system.</p>
                             </div>
                         </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
-                        <img src="assets/images/blog/blog-2.png" class="card-img-top" alt="...">
+                        <a href="https://pacificdefi.medium.com/what-is-pacific-defi-ac248663eca4" target="_blank">
+                            <img src="assets/images/blog/blog-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-white py-4">
-                            <p class="font-bold text-base text--secondary">June 22, 2021</p>
-                            <h5 class="font-bold text--darkgrey text-xl">Cryptocurrencies Latest INR Price News June 24 2021: Bitcoin still in RED</h5>
+                            <p class="font-bold text-base text--secondary">June 14, 2021</p>
+                            <h5 class="font-bold textgrey text-xl">What is Pacific DeFi?</h5>
                             <div>
-                                <p class="text-base text--secondary font-regular line-clamp">Cryptocurrencies are still attracting investors with regular headlines around the values and insane Cryptocurrencies</p>
+                                <p class="text-base text--secondary font-regular line-clamp">Pacific DeFi aims to create a new financial ecosystem that unifies
+                                    the scattered DeFi landscape. It is our goal to create an easy-to-use
+                                    platform to provide users with multi-asset crypto financing....</p>
                             </div>
                         </div>
+                        </a>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
-                        <img src="assets/images/blog/blog-3.png" class="card-img-top" alt="...">
-                        <div class="card-body bg-white py-4">
-                            <p class="font-bold text-base text--secondary">June 22, 2021 </p>
-                            <h5 class="font-bold text--darkgrey text-xl">KNOW THE UNKNOWN IN CRYPTOCURRENCY.
-                            </h5>
-                            <div>
-                                <p class="text-base text--secondary font-regular line-clamp">Cryptocurrencies are still attracting investors with regular headlines around the values and insane Cryptocurrencies</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div>                
             </div>
         </div>
     </section>
     <!-- END: News Blogs -->
 
     <!-- START: FAQ -->
-    <section class="faq">
+    <section class="faq" id="faqs">
         <div class="container">
             <div class="row gx-5 py-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
                 <div class="col-md-5">
                     <h5 class="title font-bold">FAQ</h5>
                     <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Frequently asked Questions </h3>
-                    <p class="text--secondary font-regular text-lg">An FAQ is a list of commonly asked questions and answers on a website about topics such as hours shipping and handling, product information.</p>
+                    <p class="text--secondary font-regular text-lg mb-4">An FAQ is a list of commonly asked questions and answers on a website about topics such as hours shipping and handling, product information.</p>
+                    <button type="submit" class="btn btn--primary text-base text-white btn-lg ">How to Buy</button>
                 </div>
                 <div class="col-md-7">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -1162,7 +1090,7 @@
                     </p>
                     <div class="mt-4">
                         <div class="align-join-community">
-                            <button type="button" class="btn btn--accent font-bold btn-lg  px-4 mb-2">WhitePaper</button>
+                            <button type="button" class="btn btn--accent font-bold btn-lg btn-samer mb-2">WhitePaper</button>
                             <button type="button" class="btn btn--primary-outline font-bold bg--transparent btn-lg btn-space px-4 mb-2"> 
                             <a href="https://t.me/pacificdefi" target="_blank" class="btn--hover font-bold text--primary">Join Telegram</a> 
                             </button>
@@ -1173,7 +1101,7 @@
         </div>
     </section>
     <!-- END: Tokenomics -->
-    <section class="contact-us bg-white pt-0 pb-0">
+    <section class="contact-us bg-white pt-0 pb-0" id="contact">
         <div class="container">
             <div class="row row-eq-height g-0">
                 <div class="col-sm-5">

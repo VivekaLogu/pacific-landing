@@ -39,7 +39,15 @@ body{
 section {
     padding: 6.25rem 0;
 }
-
+.text-primaty{
+    color:#005766;
+}
+.text-primaty:hover{
+    color:#fff;
+}
+.btn--primary-outline a:hover{
+    color:#fff;
+}
 section:nth-child(2n+1),
 .bg--secondary,
 .accordion-button,
@@ -55,12 +63,16 @@ section:nth-child(2n+1),
     color: var(--text-secondary-color)
 }
 
+
 .text--accent {
     color: var(--text-darkgreen);
 }
 
 .text--dark {
     color: var(--text-darkgrey-color);
+}
+.textgrey {
+    color: #0e1718!important;
 }
 .btn--hover:hover{
     color: var(--text-white-color) !important;
@@ -585,7 +597,20 @@ li {
     color: var(--text-secondary-color);
     margin-bottom: 10px;
     line-height: 23px;
+    padding-left: 1em;
+    text-indent: -0.8em;
+    position: relative;
 }
+.timeline-info li:before{
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: "\f111";
+    padding-right: 8px;
+    font-size: 5px;
+    /* margin: -10px 0 0; */
+    position: relative;
+    top: -5px;
+  }
 
 .timeline-info li:after {
     background: #79859f;
@@ -771,4 +796,27 @@ a {
     top: -18rem;
     right: -23rem;
     z-index: -1;
+}
+.feauture-sup{
+    text-align: center;
+}
+img.logo {
+    width: 90%;
+    height: 100%;
+}
+.about-video{
+    position: relative;
+}
+.youtube-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.btn-samer{
+    padding:10px 35px;
+}
+.navbar-nav {
+    z-index:1;
 }
