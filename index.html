@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">  
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
@@ -21,14 +21,16 @@
 
     <!--BEGIN: Navbar-->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/logo.svg" class="logo"alt="">
+                    <img src="assets/logo.svg" width="90%" class="img-fluid" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -63,7 +65,7 @@
                         </li>
                     </ul>
                     <div class="d-flex">
-                        <button class="btn btn--primary" type="button">Launch App</button>
+                        <button class="btn btn--primary btn--launch" type="button">Launch App</button>
                     </div>
                 </div>
             </div>
@@ -74,23 +76,22 @@
     <!-- BEGIN: Banner -->
     <section class="banner shape-1 position-relative" data-aos="fade-down" data-aos-duration="1500" data-aos-easing="linear">
         <div class="container">
-            <div class="row gy-5 align-items-center">
-                <div class="col-md-6">
+            <div class="row gy-5 align-items-center mt-1">
+                <div class="col-lg-6 pt-5">
                     <h5>Made by investors for investors</h5>
-                    <h1 class="text--primary font-bold text-5xl lh-sm pb-3 pt-2">An ecosystem which will unify the scattered DeFi landscape 
+                    <h1 class="text--primary font-bold text-5xl lh-sm pb-3 pt-2">An ecosystem which will unify the scattered DeFi landscape
                     </h1>
-                    <p class="text--secondary font-regular fs-4">Pacific DeFi creates secure and easy-to-use financial products which provide
-                        multi-asset crypto financing capabilities on different blockchains.
+                    <p class="text--secondary font-regular fs-4">Pacific DeFi creates secure and easy-to-use financial products which provide multi-asset crypto financing capabilities on different blockchains.
                     </p>
                     <div class="mt-5">
-                       <div class="aligned-btn">
-                        <button type="button" class="btn btn--primary text-white btn-lg px-3 mr-4 mb-3 ">Whitepaper</button>
-                        <button type="button" class="btn btn--accent btn-lg mr-4 mb-3 px-3">How to Buy</button>                        
-                        <button type="button" class="btn btn--primary-outline btn-lg mb-3 px-5"><a href="https://solidity.finance/audits/PacificCoin/" target="_blank" class="text-primaty">Solidity</a></button>
-                       </div>
+                        <div class="aligned-btn">
+                            <button type="button" class="btn btn--primary text-white btn-lg px-3 mr-4 mb-3 ">Whitepaper</button>
+                            <button type="button" class="btn btn--accent btn-lg mr-4 mb-3 px-3">How to Buy</button>
+                            <!-- <button type="button" class="btn btn--primary-outline btn-lg mb-3 px-5"><a href="https://solidity.finance/audits/PacificCoin/" target="_blank" class="text--primary">Solidity</a></button> -->
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">
                     <div class="d-flex justify-content-center align-items-center">
                         <img src="assets/images/banner.png" width="80%" class="img-fluid" alt="">
                     </div>
@@ -101,7 +102,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="carousel d-flex align-items-center">
-                        <div><img src="assets/images/clients/binance.svg" class="img-fluid" width="200"></div>
+                        <div><img src="assets/images/clients/binance.svg" class="img-fluid binance" width="200"></div>
                         <div><img src="assets/images/clients/pancake-swap.svg" class="img-fluid"></div>
                         <div><img src="assets/images/clients/metamask.svg" class="img-fluid"></div>
                         <div><img src="assets/images/clients/trust-wallet.svg" class="img-fluid"></div>
@@ -117,10 +118,10 @@
     <!-- BEGIN: About US -->
     <section class="aboutus" id="about">
         <div class="container">
-            <div class="row gy-4 align-items-center">
-                <div class="col-md-5" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="linear">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="linear">
                     <div class="about-video">
-                        <img src="assets/images/about-us.png" width="100%" class="img-fluid" alt="">
+                        <img src="assets/images/aboutus/about-us.png" width="95%" class="img-fluid" alt="">
                         <div class="youtube-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 170.439 119.365">
                                 <g>
@@ -133,20 +134,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-1"></div> -->
+                <div class="col-lg-6">
                     <h1 class="font-bold">About Us</h1>
-                    <h3 class="text--primary font-bold lh-sm pb-3 pt-2">Pacific DeFi aims to create a new financial ecosystem that unifies the current
-                        scattered DeFi landscape</h3>
-                    <p class="text--secondary font-regular text-lg">This includes savings products, lending & borrowing, insurance, asset management, crypto
-                        banking, synthetic products and a peer-to-peer mobile crypto and fiat exchange application.
+                    <h3 class="text--primary font-bold lh-sm pb-3 pt-2">Pacific DeFi aims to create a new financial ecosystem that unifies the current scattered DeFi landscape</h3>
+                    <p class="text--secondary font-regular text-lg">This includes savings products, lending & borrowing, insurance, asset management, crypto banking, synthetic products and a peer-to-peer mobile crypto and fiat exchange application.
                     </p>
-
-                    <p class="text--secondary font-regular text-lg">In order to provide the features above, Pacific DeFi will offer a universally usable wallet,
-                        token swap DEX platform, IDO platform, and inter-Blockchain liquidity transferability.</p>
-                    <p class="text--secondary font-regular text-lg">Pacific DeFi will also work within the legal frameworks of the countries it operates in which is
-                        to ensure longevity and scalability of the platform.
-                        </p>
+                    <p class="text--secondary font-regular text-lg">In order to provide the features above, Pacific DeFi will offer a universally usable wallet, token swap DEX platform, IDO platform, and inter-Blockchain liquidity transferability.</p>
+                    <p class="text--secondary font-regular text-lg">Pacific DeFi will also work within the legal frameworks of the countries it operates in which is to ensure longevity and scalability of the platform.
+                    </p>
+                    <div class="d-flex h-50  pt-4 align-items-end justify-content-between">
+                        <a href="#" target="_blank"><img src="assets/images/aboutus/facebook.svg" width="30" alt="facebookj"></a>
+                        <a href="https://twitter.com/PacificDeFi" target="_blank"><img src="assets/images/aboutus/twitter.svg" width="30" alt="twitter"></a>
+                        <a href="https://www.linkedin.com/company/c-pacific-ventures/" target="_blank"><img src="assets/images/aboutus/linkedin.svg" width="30" alt="linkedin"></a>
+                        <a href="https://t.me/pacificdefi" target="_blank"><img src="assets/images/aboutus/telegram.svg" width="30" alt="linkedin"></a>
+                        <a href="https://pacificdefi.medium.com/" target="_blank"><img src="assets/images/aboutus/medium.svg" width="30" alt="medium"></a>
+                        <a href="#" target="_blank"><img src="assets/images/aboutus/youtube.svg" width="30" alt="medium"></a>
+                        <a href="https://github.com/PacificDeFi" target="_blank"><img src="assets/images/aboutus/github.svg" width="30" alt="github"></a>
+                    </div>
 
                 </div>
             </div>
@@ -158,27 +163,20 @@
     <section class="mission">
         <div class="container">
             <div class="row gx-5">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h1 class="title font-bold">Mission</h1>
-                    <h3 class="text--primary font-bold lh-sm pb-3 pt-2">Pacific DeFi’s mission is to provide a decentralized, user-friendly platform that is
-                        honest and fully transparent with its user base</h3>
+                    <h3 class="text--primary font-bold lh-sm pb-3 pt-2">Pacific DeFi’s mission is to provide a decentralized, user-friendly platform that is honest and fully transparent with its user base</h3>
                 </div>
-                <div class="col-md-6">
-                    <p class="text--secondary font-regular text-lg">It is in our belief that people should take control of their own financial destiny and not be at
-                        the whim of traditional financial institutions. We want our token-holders to reap the rewards
-                        of this new financial revolution.
+                <div class="col-lg-6">
+                    <p class="text--secondary font-regular text-lg">It is in our belief that people should take control of their own financial destiny and not be at the whim of traditional financial institutions. We want our token-holders to reap the rewards of this new financial revolution.
                     </p>
-                    <p class="text--secondary font-regular text-lg">We aim to create proper use-cases using blockchain technology, taking on real-world
-                        problems that traditional finance cannot solve.
+                    <p class="text--secondary font-regular text-lg">We aim to create proper use-cases using blockchain technology, taking on real-world problems that traditional finance cannot solve.
                     </p>
-                    <p class="text--secondary font-regular text-lg">In a broader context, Pacific DeFi aims to become a market leader for banking and
-                        investment solutions in the DeFi space for the 1.7 billion people who are currently unbanked.
+                    <p class="text--secondary font-regular text-lg">In a broader context, Pacific DeFi aims to become a market leader for banking and investment solutions in the DeFi space for the 1.7 billion people who are currently unbanked.
                     </p>
-                    <p class="text--secondary font-regular text-lg">In the long run, Pacific DeFi aims to run as a financial company that focuses on revenue and
-                        profit to increase our token’s value over time.
+                    <p class="text--secondary font-regular text-lg">In the long run, Pacific DeFi aims to run as a financial company that focuses on revenue and profit to increase our token’s value over time.
                     </p>
-                    <p class="text--secondary font-regular text-lg">We want to treat token holders just how we would long-term stockholders in a listed
-                        company.                        
+                    <p class="text--secondary font-regular text-lg">We want to treat token holders just how we would long-term stockholders in a listed company.
                     </p>
                 </div>
             </div>
@@ -192,8 +190,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-7">
                     <h1 class="font-bold feauture-sup">Features</h1>
-                    <h3 class="text--primary feauture-sup font-bold lh-sm ls-sm pb-5 pt-2">We want our token-holders to reap the rewards of this new financial revolution, where
-                        anyone can be in charge of their financial destiny</h3>
+                    <h3 class="text--primary feauture-sup font-bold lh-sm ls-sm pb-5 pt-2">We want our token-holders to reap the rewards of this new financial revolution, where anyone can be in charge of their financial destiny</h3>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -227,28 +224,24 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link font-bold text-base" id="pills-capital-tab" data-bs-toggle="pill" data-bs-target="#pills-capital" type="button" role="tab" aria-controls="pills-capital" aria-selected="false">Venture Capital</button>
                         </li>
-                        
+
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-first" role="tabpanel" aria-labelledby="pills-first-tab">
                             <div class="container">
                                 <div class="row align-items-center py-5">
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6">
                                         <h5 class="font-bold">Liquidity Pool</h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Liquidity pools are one of the foundational technologies behind the current DeFi ecosystem</h3>
-                                        <p class="text--secondary font-regular text-lg">They are an essential part of automated market makers (AMM), borrow-lend protocols, yield
-                                            farming, synthetic assets, on-chain insurance, blockchain gaming – the list goes on.
+                                        <p class="text--secondary font-regular text-lg">They are an essential part of automated market makers (AMM), borrow-lend protocols, yield farming, synthetic assets, on-chain insurance, blockchain gaming – the list goes on.
                                         </p>
 
-                                        <p class="text--secondary font-regular text-lg">The idea is profoundly simple. A liquidity pool is basically funds put together in a big digital
-                                            pile. Users called liquidity providers (LPs) add an equal value of two tokens in a pool to
-                                            create a market. In exchange for providing their funds, they earn trading fees from the trades
-                                            that happen in their pool, proportional to their share of the total liquidity.</p>
-                                        <p class="text--secondary font-regular text-lg">When you’re executing a trade on an AMM, you don’t have a traditional counterparty.
-                                            Instead, you’re executing the trade against the liquidity in the liquidity pool.</p>
+                                        <p class="text--secondary font-regular text-lg">The idea is profoundly simple. A liquidity pool is basically funds put together in a big digital pile. Users called liquidity providers (LPs) add an equal value of two tokens in a pool to create a market. In exchange
+                                            for providing their funds, they earn trading fees from the trades that happen in their pool, proportional to their share of the total liquidity.</p>
+                                        <p class="text--secondary font-regular text-lg">When you’re executing a trade on an AMM, you don’t have a traditional counterparty. Instead, you’re executing the trade against the liquidity in the liquidity pool.</p>
                                         <p class="text--secondary font-regular text-lg">For the buyer to buy, there doesn’t need to be a seller, only sufficient liquidity in the pool.</p>
                                     </div>
-                                    <div class="col-md-6" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+                                    <div class="col-lg-6" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
                                         <div class="text-center">
                                             <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                                         </div>
@@ -260,230 +253,194 @@
                         <div class="tab-pane fade" id="pills-auto" role="tabpanel" aria-labelledby="pills-auto-tab">
                             <div class="container">
                                 <div class="row align-items-center py-5">
-                                    <div class="col-md-6 first" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+                                    <div class="col-lg-6 first" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
                                         <div class="text-center">
                                             <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                                         </div>
 
                                     </div>
-                                    <div class="col-md-6 second">
+                                    <div class="col-lg-6 second">
                                         <h5 class="text-xl font-bold">Auto-Compounding </h5>
-                                        <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Distributing new tokens in the hands of the right people is a very difficult problem for crypto
-                                            projects. Liquidity mining has been one of the more successful approaches.</h3>
-                                        <p class="text--secondary font-regular text-lg">In summary, the tokens are distributed algorithmically to users who put their tokens into a
-                                            liquidity pool. Then, the newly minted tokens are distributed proportionally to each user’s
-                                            share of the pool.
+                                        <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Distributing new tokens in the hands of the right people is a very difficult problem for crypto projects. Liquidity mining has been one of the more successful approaches.</h3>
+                                        <p class="text--secondary font-regular text-lg">In summary, the tokens are distributed algorithmically to users who put their tokens into a liquidity pool. Then, the newly minted tokens are distributed proportionally to each user’s share of the pool.
                                         </p>
-                                        <p class="text--secondary font-regular text-lg">For example, a popular trading pair on the Binance Smart Chain on the PancakeSwap DEX
-                                            is BNB/CAKE.
-                                            </p>
-                                        <p class="text--secondary font-regular text-lg">LPs providing liquidity to the pool will get rewards in CAKE as part of PancakeSwap’s token
-                                            emission rewards, plus a share of the transaction fees generated from BNB/CAKE trade swaps.
-                                            </p>
-                                        <p class="text--secondary font-regular text-lg">Traditionally, users who receive newly minted CAKE rewards need to convert CAKE into
-                                            equal values of BNB and CAKE to stake LP tokens again in the BNB/CAKE LP to earn more
-                                            CAKE rewards.</p>
-                                        <p class="text--secondary font-regular text-lg">Pacific DeFi makes this process much easier by auto-compounding the CAKE rewards of
-                                            the BNB/CAKE LP, at the same time distributing its native PACIFIC token to LPs as an
-                                            additional reward for using our ecosystem.</p>
+                                        <p class="text--secondary font-regular text-lg">For example, a popular trading pair on the Binance Smart Chain on the PancakeSwap DEX is BNB/CAKE.
+                                        </p>
+                                        <p class="text--secondary font-regular text-lg">LPs providing liquidity to the pool will get rewards in CAKE as part of PancakeSwap’s token emission rewards, plus a share of the transaction fees generated from BNB/CAKE trade swaps.
+                                        </p>
+                                        <p class="text--secondary font-regular text-lg">Traditionally, users who receive newly minted CAKE rewards need to convert CAKE into equal values of BNB and CAKE to stake LP tokens again in the BNB/CAKE LP to earn more CAKE rewards.</p>
+                                        <p class="text--secondary font-regular text-lg">Pacific DeFi makes this process much easier by auto-compounding the CAKE rewards of the BNB/CAKE LP, at the same time distributing its native PACIFIC token to LPs as an additional reward for using our ecosystem.</p>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-second" role="tabpanel" aria-labelledby="pills-second-tab">
                             <div class="container">
                                 <div class="row align-items-center py-5">
-                                    
-                                    <div class="col-md-6">
+
+                                    <div class="col-lg-6">
                                         <h5 class="text-xl font-bold">Staking </h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Staking PACIFIC</h3>
-                                        <p class="text--secondary font-regular text-lg">Users can stake their tokens to receive rewards in PACIFIC during the minting period of 200
-                                            days. Once the minting period is over, users will receive all other fees mentioned via
-                                            dividends or buybacks.
+                                        <p class="text--secondary font-regular text-lg">Users can stake their tokens to receive rewards in PACIFIC during the minting period of 200 days. Once the minting period is over, users will receive all other fees mentioned via dividends or buybacks.
                                         </p>
 
-                                        <p class="text--secondary font-regular text-lg">With the PoS mechanism, new blocks are produced and verified by staking. This means that
-                                            you don’t need special computers to solve difficult math problems, which was the case with
-                                            traditional proof-of-work (PoW) mining.</p>
-                                        <p class="text--secondary font-regular text-lg">Staking is all about how many coins you are holding. The amount determines your reward. A
-                                            user who has secured more of a certain coin is more likely to be chosen as the new block
-                                            validator.
-                                            </p>
-                                        <p class="text--secondary font-regular text-lg">The main attraction to staking is that users can lock up their crypto assets and earn passive
-                                            income. Secondly, staking gives users the opportunity to participate in the governance model
-                                            of the Pacific DeFi ecosystem.</p>
+                                        <p class="text--secondary font-regular text-lg">With the PoS mechanism, new blocks are produced and verified by staking. This means that you don’t need special computers to solve difficult math problems, which was the case with traditional proof-of-work (PoW)
+                                            mining.
+                                        </p>
+                                        <p class="text--secondary font-regular text-lg">Staking is all about how many coins you are holding. The amount determines your reward. A user who has secured more of a certain coin is more likely to be chosen as the new block validator.
+                                        </p>
+                                        <p class="text--secondary font-regular text-lg">The main attraction to staking is that users can lock up their crypto assets and earn passive income. Secondly, staking gives users the opportunity to participate in the governance model of the Pacific DeFi ecosystem.</p>
                                     </div>
-                                    <div class="col-md-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
+                                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
                                         <div class="text-center">
                                             <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                                         </div>
 
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-third" role="tabpanel" aria-labelledby="pills-third-tab">
                             <div class="container">
                                 <div class="row align-items-center py-5">
-                                    <div class="col-md-6 first" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+                                    <div class="col-lg-6 first" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
                                         <div class="text-center">
                                             <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6 second">
+                                    <div class="col-lg-6 second">
                                         <h5 class="text-xl font-bold">Time Deposit Vaults</h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Simple way to lend & earn</h3>
-                                        <p class="text--secondary font-regular text-lg">These are savings instruments that can be compared to time deposits at traditional banks.
-                                            However, in DeFi the interest you earn is substantially much higher than what is currently
-                                            offered in traditional finance.
+                                        <p class="text--secondary font-regular text-lg">These are savings instruments that can be compared to time deposits at traditional banks. However, in DeFi the interest you earn is substantially much higher than what is currently offered in traditional finance.
                                         </p>
 
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Flexible vs. locked savings</h3>
-                                        <p class="text--secondary font-regular text-lg">Flexible savings in your crypto savings account. Put your crypto to work by participating in
-                                            our flexible savings products, with the flexibility to redeem your funds at any time.</p>
-                                        <p class="text--secondary font-regular text-lg">Locked savings in your crypto savings account. You can earn interest by locking up your
-                                            crypto for a predefined length of time and earn higher interest earnings in doing so.
-                                            </p>
+                                        <p class="text--secondary font-regular text-lg">Flexible savings in your crypto savings account. Put your crypto to work by participating in our flexible savings products, with the flexibility to redeem your funds at any time.</p>
+                                        <p class="text--secondary font-regular text-lg">Locked savings in your crypto savings account. You can earn interest by locking up your crypto for a predefined length of time and earn higher interest earnings in doing so.
+                                        </p>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-lending" role="tabpanel" aria-labelledby="pills-lending-tab">
                             <div class="container">
                                 <div class="row align-items-center py-5">
-                                    
-                                    <div class="col-md-6">
+
+                                    <div class="col-lg-6">
                                         <h5 class="text-xl font-bold">Institutional Lending
                                         </h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Uncollateralized lending</h3>
-                                        <p class="text--secondary font-regular text-lg">A majority of DeFi projects have been built on collateralized lending, where users must first
-                                            pledge their assets before they can borrow against them.
+                                        <p class="text--secondary font-regular text-lg">A majority of DeFi projects have been built on collateralized lending, where users must first pledge their assets before they can borrow against them.
                                         </p>
 
-                                        <p class="text--secondary font-regular text-lg">Pacific DeFi believes uncollateralized lending is the next frontier in this industry, however it
-                                            requires some collaboration between centralized parties to make it safer from a
-                                            risk-management perspective.</p>
-                                        <p class="text--secondary font-regular text-lg">All of our lending and borrowing activity on Pacific DeFi will be fully transparent, allowing
-                                            lenders to understand our borrowers and the flow of funds.
-                                            </p>                                        
+                                        <p class="text--secondary font-regular text-lg">Pacific DeFi believes uncollateralized lending is the next frontier in this industry, however it requires some collaboration between centralized parties to make it safer from a risk-management perspective.</p>
+                                        <p class="text--secondary font-regular text-lg">All of our lending and borrowing activity on Pacific DeFi will be fully transparent, allowing lenders to understand our borrowers and the flow of funds.
+                                        </p>
                                     </div>
-                                    <div class="col-md-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
+                                    <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700">
                                         <div class="text-center">
                                             <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-fourth" role="tabpanel" aria-labelledby="pills-fourth-tab">
                             <div class="container">
                                 <div class="row align-items-center py-5">
-                                    <div class="col-md-6 first" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+                                    <div class="col-lg-6 first" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
                                         <div class="text-center">
                                             <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6 second">
+                                    <div class="col-lg-6 second">
                                         <h5 class="text-xl font-bold">Crypto Insurance</h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Protocol insurance</h3>
-                                        <p class="text--secondary font-regular text-lg">Blockchain’s ability to create trust in a trustless ecosystem via public ledgers and fortified
-                                            cybersecurity protocols is extremely positive for the insurance industry's future growth. It
-                                            optimizes the efficiency, security, and transparency of the insurance industry.
+                                        <p class="text--secondary font-regular text-lg">Blockchain’s ability to create trust in a trustless ecosystem via public ledgers and fortified cybersecurity protocols is extremely positive for the insurance industry's future growth. It optimizes the efficiency,
+                                            security, and transparency of the insurance industry.
                                         </p>
 
-                                        <p class="text--secondary font-regular text-lg">Distributed Ledger Technology (DLT) has beneficial applications for streamlining insurance
-                                            claims processing and boosting cybersecurity protocols, which is why Pacific DeFi will create
-                                            insurance products for the crypto-financial ecosystem, by taking yields via insuring trading
-                                            positions or against hacking/scams.</p>
+                                        <p class="text--secondary font-regular text-lg">Distributed Ledger Technology (DLT) has beneficial applications for streamlining insurance claims processing and boosting cybersecurity protocols, which is why Pacific DeFi will create insurance products for the
+                                            crypto-financial ecosystem, by taking yields via insuring trading positions or against hacking/scams.</p>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-fifth" role="tabpanel" aria-labelledby="pills-fifth-tab">
                             <div class="container">
-                                <div class="row align-items-center py-5">                                   
-                                    <div class="col-md-6">
+                                <div class="row align-items-center py-5">
+                                    <div class="col-lg-6">
                                         <h5 class="text-xl font-bold">Crypto Asset Management </h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Retail Asset Management</h3>
-                                        <p class="text--secondary font-regular text-lg">Provide asset management services to retail investors who want diversified asset allocations
-                                            across a different number of blockchains and tokens. These funds may have fixed or
-                                            custom-designed asset allocations.
+                                        <p class="text--secondary font-regular text-lg">Provide asset management services to retail investors who want diversified asset allocations across a different number of blockchains and tokens. These funds may have fixed or custom-designed asset allocations.
                                         </p>
-                                        <p class="text--secondary font-regular text-lg">Pacific DeFi will look to partner with existing asset management protocols to build out its
-                                            custom offerings and other tailor made fund products.</p>
-                                        
+                                        <p class="text--secondary font-regular text-lg">Pacific DeFi will look to partner with existing asset management protocols to build out its custom offerings and other tailor made fund products.</p>
+
                                     </div>
-                                    <div class="col-md-6" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+                                    <div class="col-lg-6" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
                                         <div class="text-center">
                                             <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-dex" role="tabpanel" aria-labelledby="pills-dex-tab">
                             <div class="container">
                                 <div class="row align-items-center py-5">
-                                    <div class="col-md-6 first" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+                                    <div class="col-lg-6 first" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
                                         <div class="text-center">
                                             <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-md-6 second">
+                                    <div class="col-lg-6 second">
                                         <h5 class="text-xl font-bold">Proprietary DEX with Launchpad</h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Swaps</h3>
-                                        <p class="text--secondary font-regular text-lg">Users can easily swap tokens on Pacific DeFi’s proprietary DEX so that there is no need to
-                                            leave the platform to obtain LP tokens.
+                                        <p class="text--secondary font-regular text-lg">Users can easily swap tokens on Pacific DeFi’s proprietary DEX so that there is no need to leave the platform to obtain LP tokens.
                                         </p>
 
-                                        <p class="text--secondary font-regular text-lg">Swapping between coins can also be done more efficiently as users do not need to use
-                                            another external platform to make swaps.
+                                        <p class="text--secondary font-regular text-lg">Swapping between coins can also be done more efficiently as users do not need to use another external platform to make swaps.
                                         </p>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Launchpad</h3>
-                                        <p class="text--secondary font-regular text-lg">Pacific DeFi will empower crypto projects with the ability to distribute tokens and raise the
-                                            necessary liquidity in order to fund promising projects in the DeFi space.
+                                        <p class="text--secondary font-regular text-lg">Pacific DeFi will empower crypto projects with the ability to distribute tokens and raise the necessary liquidity in order to fund promising projects in the DeFi space.
                                         </p>
 
-                                        <p class="text--secondary font-regular text-lg">We aim to be a platform where hand-picked projects are launched, allowing investors to
-                                            participate in a transparent and assured token sale process.
+                                        <p class="text--secondary font-regular text-lg">We aim to be a platform where hand-picked projects are launched, allowing investors to participate in a transparent and assured token sale process.
                                         </p>
-                                        <p class="text--secondary font-regular text-lg">With the rise in the popularity of other chains such as Polygon, HECO and Solana, it is
-                                            essential that projects can raise capital in a decentralized and interoperable environment.
+                                        <p class="text--secondary font-regular text-lg">With the rise in the popularity of other chains such as Polygon, HECO and Solana, it is essential that projects can raise capital in a decentralized and interoperable environment.
                                         </p>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-capital" role="tabpanel" aria-labelledby="pills-capital-tab">
                             <div class="container">
                                 <div class="row align-items-center py-5">
-                                    
-                                    <div class="col-md-6">
+
+                                    <div class="col-lg-6">
                                         <h5 class="text-xl font-bold">Venture Capital </h5>
                                         <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Venture Capital Funds</h3>
-                                        <p class="text--secondary font-regular text-lg">Pacific DeFi will create a VC arm to support and invest in distributed ledger technology (DLT)
-                                            projects that advance the DeFi industry and provide a positive societal impact.
+                                        <p class="text--secondary font-regular text-lg">Pacific DeFi will create a VC arm to support and invest in distributed ledger technology (DLT) projects that advance the DeFi industry and provide a positive societal impact.
                                         </p>
 
-                                        <p class="text--secondary font-regular text-lg">With support from its parent company, C-Pacific Ventures, Pacific DeFi aims to support the
-                                            creation of global and easily accessible financial products that are revolutionizing traditional
-                                            finance.</p>                                        
+                                        <p class="text--secondary font-regular text-lg">With support from its parent company, C-Pacific Ventures, Pacific DeFi aims to support the creation of global and easily accessible financial products that are revolutionizing traditional finance.
+                                        </p>
                                     </div>
-                                    <div class="col-md-6" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
+                                    <div class="col-lg-6" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="700">
                                         <div class="text-center">
                                             <img src="assets/images/products/liquidity-pool.png" width="100%" class="img-fluid" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -497,9 +454,7 @@
             <div class="row justify-content-center" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="900">
                 <div class="col-md-7">
                     <h1 class="font-bold feauture-sup">Tokenomics</h1>
-                    <h3 class="text--primary feauture-sup font-bold lh-sm ls-sm pb-5 pt-2">The Pacific DeFi token is the native asset of our ecosystem. Users are able to
-                        participate in the growth of our platform and earn fees from the different business
-                        lines by holding PACIFIC</h3>
+                    <h3 class="text--primary feauture-sup font-bold lh-sm ls-sm pb-5 pt-2">The Pacific DeFi token is the native asset of our ecosystem. Users are able to participate in the growth of our platform and earn fees from the different business lines by holding PACIFIC</h3>
                 </div>
                 <div class="col-md-12 text-center">
                     <img src="assets/images/tokenomics.png" class="img-fluid" width="80%" alt="">
@@ -536,125 +491,112 @@
     <section class="token-utility" id="utility">
         <div class="container">
             <div class="row align-items-center py-5">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h1 class="title font-bold">Token Utility</h1s>
-                    <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Pacific DeFi will democratize various aspects of the platform, which will give token
-                        holders certain benefits and rights</h3>
+                        <h3 class="text--primary font-bold lh-sm ls-sm pb-3 pt-2">Pacific DeFi will democratize various aspects of the platform, which will give token holders certain benefits and rights</h3>
                 </div>
-                <div class="col-md-6" style="margin-top: 3%;">
-                    <p class="text--secondary font-regular text-lg">The PACIFIC token will be used throughout the platform for multiple use cases. Examples
-                        are given below on different use-cases across the Pacific DeFi ecosystem.</p>
+                <div class="col-lg-6">
+                    <p class="text--secondary font-regular text-lg">The PACIFIC token will be used throughout the platform for multiple use cases. Examples are given below on different use-cases across the Pacific DeFi ecosystem.</p>
                 </div>
             </div>
             <div class="row row-eq-height g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                     <div class="token__card--border rounded bg-white p-4">
                         <div class="token__icon">
                             <img src="assets/images/token-utility/trading-fees.svg" width="50" height="50" alt="">
                         </div>
                         <div class="token__info">
-                            <h4 class="font-bold text-xl text--darkgrey">Trading</h4>
-                            <p class="font-regular text-lg mb-0">Trading fees are generated when users swap between tokens on our new
-                                AMM-based DEX.</p>
+                            <h4 class="font-bold text-xl text--darkgrey text-capitalize">Trading</h4>
+                            <p class="font-regular text-lg mb-0">Trading fees are generated when users swap between tokens on our new AMM-based DEX.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                     <div class="token__card--border rounded bg-white p-4">
                         <div class="token__icon">
                             <img src="assets/images/token-utility/staking.svg" width="50" height="50" alt="">
                         </div>
                         <div class="token__info">
-                            <h4 class="font-bold text-xl text--darkgrey">Staking</h4>
-                            <p class="font-regular text--secondary text-lg mb-0">Stake tokens to receive rewards in PACIFIC tokens during the minting period of
-                                200 days.</p>
+                            <h4 class="font-bold text-xl text--darkgrey text-capitalize">Staking</h4>
+                            <p class="font-regular text--secondary text-lg mb-0">Stake tokens to receive rewards in PACIFIC tokens during the minting period of 200 days.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                     <div class="token__card--border rounded bg-white p-4">
                         <div class="token__icon">
                             <img src="assets/images/token-utility/tiers.svg" width="50" height="50" alt="">
                         </div>
                         <div class="token__info">
-                            <h4 class="font-bold text-xl text--darkgrey">Auto-compound</h4>
-                            <p class="font-regular text--secondary text-lg mb-0">25% auto-compound fee on popular
-                                token pairs, with 80% of the fees being used to buyback and burn PACIFIC, making it
-                                scarcer over time.
+                            <h4 class="font-bold text-xl text--darkgrey text-capitalize">Auto-compound</h4>
+                            <p class="font-regular text--secondary text-lg mb-0">25% auto-compound fee on popular token pairs, with 80% of the fees being used to buyback and burn PACIFIC, making it scarcer over time.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                     <div class="token__card--border rounded bg-white p-4">
                         <div class="token__icon">
                             <img src="assets/images/token-utility/lending-borrowing.svg" width="50" height="50" alt="">
                         </div>
                         <div class="token__info">
-                            <h4 class="font-bold text-xl text--darkgrey">Lending and borrowing</h4>
-                            <p class="font-regular text--secondary text-lg mb-0">Uncollateralised lending to retail and institutional clients within a
-                                regulated environment by obtaining relevant licenses in select jurisdictions.</p>
+                            <h4 class="font-bold text-xl text--darkgrey">Lending and Borrowing</h4>
+                            <p class="font-regular text--secondary text-lg mb-0">Uncollateralised lending to retail and institutional clients within a regulated environment by obtaining relevant licenses in select jurisdictions.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                     <div class="token__card--border rounded bg-white p-4">
                         <div class="token__icon">
                             <img src="assets/images/token-utility/insurance.svg" width="50" height="50" alt="">
                         </div>
                         <div class="token__info">
-                            <h4 class="font-bold text-xl text--darkgrey">Insurance</h4>
-                            <p class="font-regular text--secondary text-lg mb-0">Blockchain is the answer to the legacy insurance industry. Our group can take
-                                advantage of this frontier space and generate premiums by insuring trading positions as well
-                                as against hacking/scams.</p>
+                            <h4 class="font-bold text-xl text--darkgrey text-capitalize">Insurance</h4>
+                            <p class="font-regular text--secondary text-lg mb-0">Blockchain is the answer to the legacy insurance industry. Our group can take advantage of this frontier space and generate premiums by insuring trading positions as well as against hacking/scams.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                     <div class="token__card--border rounded bg-white p-4">
                         <div class="token__icon">
                             <img src="assets/images/token-utility/asset-management.svg" width="50" height="50" alt="">
                         </div>
                         <div class="token__info">
-                            <h4 class="font-bold text-xl text--darkgrey">Asset management</h4>
-                            <p class="font-regular text--secondary text-lg mb-0">Clients can gain exposure to a wide range of high-quality indices,
-                                complexity-free offerings and customized investment programs for high-net-worth individuals.</p>
+                            <h4 class="font-bold text-xl text--darkgrey text-capitalize">Asset management</h4>
+                            <p class="font-regular text--secondary text-lg mb-0">Clients can gain exposure to a wide range of high-quality indices, complexity-free offerings and customized investment programs for high-net-worth individuals.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                     <div class="token__card--border rounded bg-white p-4">
                         <div class="token__icon">
                             <img src="assets/images/token-utility/synthetic.svg" width="50" height="50" alt="">
                         </div>
                         <div class="token__info">
-                            <h4 class="font-bold text-xl text--darkgrey">Synthetic product</h4>
-                            <p class="font-regular text--secondary text-lg mb-0">Tradable synthetic products that track underlying assets. Pacific DeFi
-                                earns revenues in the form of trading fees developed from these assets.</p>
+                            <h4 class="font-bold text-xl text--darkgrey text-capitalize">Synthetic product</h4>
+                            <p class="font-regular text--secondary text-lg mb-0">Tradable synthetic products that track underlying assets. Pacific DeFi earns revenues in the form of trading fees developed from these assets.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                     <div class="token__card--border rounded bg-white p-4">
                         <div class="token__icon">
                             <img src="assets/images/token-utility/insurance.svg" width="50" height="50" alt="">
                         </div>
                         <div class="token__info">
-                            <h4 class="font-bold text-xl text--darkgrey">Proprietary exchange</h4>
-                            <p class="font-regular text--secondary text-lg mb-0">Issuing initial DEX offerings to offer liquidity of crypto assets in a
-                                fast and fair trading environment. </p>
+                            <h4 class="font-bold text-xl text--darkgrey text-capitalize">Proprietary exchange</h4>
+                            <p class="font-regular text--secondary text-lg mb-0">Issuing initial DEX offerings to offer liquidity of crypto assets in a fast and fair trading environment. </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                     <div class="token__card--border rounded bg-white p-4">
                         <div class="token__icon">
                             <img src="assets/images/token-utility/asset-management.svg" width="50" height="50" alt="">
                         </div>
                         <div class="token__info">
-                            <h4 class="font-bold text-xl text--darkgrey">Gaming</h4>
-                            <p class="font-regular text--secondary text-lg mb-0">Fees from participating in our no-loss lottery. A percentage of total winnings will
-                                also go towards Pacific DeFi’s charitable efforts.</p>
+                            <h4 class="font-bold text-xl text--darkgrey text-capitalize">Gaming</h4>
+                            <p class="font-regular text--secondary text-lg mb-0">Fees from participating in our no-loss lottery. A percentage of total winnings will also go towards Pacific DeFi’s charitable efforts.</p>
                         </div>
                     </div>
                 </div>
@@ -667,9 +609,9 @@
     <section class="Roadmap" id="roadmap">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <h1 class="font-bold feauture-sup" title="Roadmap">Roadmap</h1>
-                    <h3 class="text--primary feauture-sup font-bold lh-sm ls-sm pb-5 pt-2">A roadmap is a strategic plan that defines a goal includes the major steps or milestones needed to reach it.</h3>
+                    <h3 class="text--primary feauture-sup font-bold lh-sm ls-sm pb-5 pt-2">A roadmap is a strategic plan that defines a goal includes the major steps or milestones needed to reach it</h3>
                 </div>
                 <div class="col-md-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200">
                     <div class="timeline-row timeline-row-odd timeline-row-done">
@@ -751,7 +693,7 @@
                     <div class="timeline-row timeline-row-even">
                         <div class="row no-gutters text-left text-lg-center justify-content-center flex-row-reverse">
                             <div class="col-lg">
-                                <div class="timeline-item timeline-current">
+                                <div class="timeline-item">
                                     <span class="timeline-date font-bold">Q4</span>
                                     <h6 class="timeline-title text--darkgrey font-bold text-xl">Phase 4: Pacific DeFi insurance</h6>
                                     <ul class="timeline-info">
@@ -843,13 +785,12 @@
             <div class="row justify-content-center py-5">
                 <div class="col-md-9">
                     <h1 class="font-bold feauture-sup">Our Core Team</h1>
-                    <h3 class="text--primary feauture-sup font-semibold lh-sm ls-sm pb-5 pt-2">We are a group of passionate people united with our mission to democratize finance. Our
-                        team believes that everyone – across income and educational background – should have
-                        access to products that can help them save and invest towards a better future </h3>
+                    <h3 class="text--primary feauture-sup font-semibold lh-sm ls-sm pb-5 pt-2">We are a group of passionate people united with our mission to democratize finance. Our team believes that everyone – across income and educational background – should have access to products that can help them save and invest towards
+                        a better future </h3>
                 </div>
             </div>
             <div class="row row-eq-height g-4">
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
                         <img src="assets/images/team/sam-weil.png" class="card-img-top" alt="...">
                         <div class="card-body bg-white p-4">
@@ -861,7 +802,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
                         <img src="assets/images/team/iikay.png" class="card-img-top" alt="...">
                         <div class="card-body bg-white p-4">
@@ -873,7 +814,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
                         <img src="assets/images/avatar.jpg" class="card-img-top  img-fluid" alt="...">
                         <div class="card-body bg-white p-4">
@@ -884,7 +825,7 @@
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
@@ -900,10 +841,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="btn-align">
-                        <button type="button" class="btn underline bg--palegreen rounded p-2 px-4"><a href="#"
+                        <button type="button" class="btn underline bg--palegreen rounded p-2 px-4">
+                            <a href="https://pacificdefi.medium.com/" target="_blank"
                             class="text--primary font-bold">Read More News</a></button>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="row row-eq-height g-4">
@@ -911,15 +853,13 @@
                     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
                         <a href="https://pacificdefi.medium.com/pacific-defi-roadmap-the-way-forward-326b39937b80" target="_blank">
                             <img src="assets/images/blog/blog-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-white py-4">
-                            <p class="font-bold text-base text--secondary">June 29, 2021</p>
-                            <h5 class="font-bold textgrey text-xl">Pacific DeFi Roadmap — The Way Forward</h5>
-                            <div>
-                                <p class="text-base text--secondary font-regular line-clamp">Pacific DeFi is on a mission to provide a fully transparent,
-                                    decentralized, and user-friendly platform for all segments of the
-                                    financial system.</p>
+                            <div class="card-body bg-white py-4">
+                                <p class="font-bold text-base text--secondary">June 29, 2021</p>
+                                <h5 class="font-bold textgrey text-xl">Pacific DeFi Roadmap — The Way Forward</h5>
+                                <div>
+                                    <p class="text-base text--secondary font-regular line-clamp">Pacific DeFi is on a mission to provide a fully transparent, decentralized, and user-friendly platform for all segments of the financial system.</p>
+                                </div>
                             </div>
-                        </div>
                         </a>
                     </div>
                 </div>
@@ -927,18 +867,16 @@
                     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
                         <a href="https://pacificdefi.medium.com/what-is-pacific-defi-ac248663eca4" target="_blank">
                             <img src="assets/images/blog/blog-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-white py-4">
-                            <p class="font-bold text-base text--secondary">June 14, 2021</p>
-                            <h5 class="font-bold textgrey text-xl">What is Pacific DeFi?</h5>
-                            <div>
-                                <p class="text-base text--secondary font-regular line-clamp">Pacific DeFi aims to create a new financial ecosystem that unifies
-                                    the scattered DeFi landscape. It is our goal to create an easy-to-use
-                                    platform to provide users with multi-asset crypto financing....</p>
+                            <div class="card-body bg-white py-4">
+                                <p class="font-bold text-base text--secondary">June 14, 2021</p>
+                                <h5 class="font-bold textgrey text-xl">What is Pacific DeFi?</h5>
+                                <div>
+                                    <p class="text-base text--secondary font-regular line-clamp">Pacific DeFi aims to create a new financial ecosystem that unifies the scattered DeFi landscape. It is our goal to create an easy-to-use platform to provide users with multi-asset crypto financing....</p>
+                                </div>
                             </div>
-                        </div>
                         </a>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
@@ -963,10 +901,9 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body"><p>Pacific DeFi aims to create a new financial ecosystem that unifies the current
-                                    scattered DeFi landscape. The goal of Pacific DeFi is to provide an
-                                    easy-to-use platform to provide multi-asset crypto financing capabilities on
-                                    different blockchains.</p>
+                                <div class="accordion-body">
+                                    <p>Pacific DeFi aims to create a new financial ecosystem that unifies the current scattered DeFi landscape. The goal of Pacific DeFi is to provide an easy-to-use platform to provide multi-asset crypto financing capabilities
+                                        on different blockchains.</p>
                                 </div>
                             </div>
                         </div>
@@ -978,18 +915,12 @@
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">Liquidity mining is a term used in DeFi applications where users supply
-                                   <p> liquidity to decentralized financial applications and receive rewards for doing
-                                    so.</p> 
-                                   <p>In the context of Pacific DeFi, liquidity mining refers to users (Liquidity
-                                    Providers, or LPs) supplying both assets to a given trading pair market so that
-                                    the protocol can execute trades.</p>
-                                    <p>  Whenever liquidity is deposited into a pool, PACIFIC tokens are minted to the
-                                        Liquidity Provider’s address, in proportion to how much liquidity they
-                                        contributed to the pool. These tokens are a representation of a Liquidity
+                                    <p> liquidity to decentralized financial applications and receive rewards for doing so.
+                                    </p>
+                                    <p>In the context of Pacific DeFi, liquidity mining refers to users (Liquidity Providers, or LPs) supplying both assets to a given trading pair market so that the protocol can execute trades.</p>
+                                    <p> Whenever liquidity is deposited into a pool, PACIFIC tokens are minted to the Liquidity Provider’s address, in proportion to how much liquidity they contributed to the pool. These tokens are a representation of a Liquidity
                                         Provider’s contribution to a pool.</p>
-                                    <p>Whenever a trade occurs, a 0.3% fee is levied and is distributed pro-rata to all
-                                        Liquidity Providers in the pool. The user is able to claim the fees when they
-                                        take their assets back from the protocol.</p>
+                                    <p>Whenever a trade occurs, a 0.3% fee is levied and is distributed pro-rata to all Liquidity Providers in the pool. The user is able to claim the fees when they take their assets back from the protocol.</p>
                                 </div>
                             </div>
                         </div>
@@ -1000,10 +931,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body"><p>As liquidity mining is the first stage of Pacific DeFi, you can join our LP pools
-                                    by converting your assets into our tokens and depositing them into our pools
-                                    via PancakeSwap. You will receive rewards that are higher or lower
-                                    depending on the investment amount you've put in the project.</p></div>
+                                <div class="accordion-body">
+                                    <p>As liquidity mining is the first stage of Pacific DeFi, you can join our LP pools by converting your assets into our tokens and depositing them into our pools via PancakeSwap. You will receive rewards that are higher
+                                        or lower depending on the investment amount you've put in the project.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -1013,11 +944,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body"><p>We are in the process of being audited by Solidity.Finance and Hacken,
-                                    therefore our code will be tested for any weaknesses before our official token
-                                    launch. We highly encourage users to interact with us directly through
-                                    Telegram to get immediate answers on our roadmap and the way forward. </p>
-                                   <p> Always remember that DeFi is a frontier industry and is still considered high risk.</p>
+                                <div class="accordion-body">
+                                    <p>We are in the process of being audited by Solidity.Finance and Hacken, therefore our code will be tested for any weaknesses before our official token launch. We highly encourage users to interact with us directly through
+                                        Telegram to get immediate answers on our roadmap and the way forward. </p>
+                                    <p> Always remember that DeFi is a frontier industry and is still considered high risk.</p>
                                 </div>
                             </div>
                         </div>
@@ -1028,8 +958,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseFifth" class="accordion-collapse collapse" aria-labelledby="flush-headingFifth" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">PACIFIC is a capped token of the Pacific DeFi platform. Its current supply is
-                                    100,000,000 PACIFIC. For more details, <a href="https://docs.pacific-defi.com">please visit our documentation page</a></div>
+                                <div class="accordion-body">PACIFIC is a capped token of the Pacific DeFi platform. Its current supply is 100,000,000 PACIFIC. For more details, <a href="https://docs.pacific-defi.com">please visit our documentation page</a></div>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -1040,20 +969,20 @@
                             </h2>
                             <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                   <div class="row">
-                                       <div class="col-md-6">
-                                        <a href="https://www.pacific-defi.com">Visit our website</a> <br>
-                                        <a href="https://t.me/pacificdefi">Join our Telegram</a> <br>
-                                        <a href="https://twitter.com/PacificDeFi">Follow our Twitter</a> <br>
-                                        <a href="https://medium.com/@pacificdefi">Follow our Medium</a>  
-                                      
-                                       </div>
-                                       <div class="col-md-6">
-                                        <a href="(TBD)">YouTube Channel</a> <br>
-                                        <a href="Read our docs">(PENDING)</a> <br>
-                                        <a href="https://github.com/PacificDeFi">Review our code</a>
-                                       </div>
-                                   </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a href="https://www.pacific-defi.com">Visit our website</a> <br>
+                                            <a href="https://t.me/pacificdefi">Join our Telegram</a> <br>
+                                            <a href="https://twitter.com/PacificDeFi">Follow our Twitter</a> <br>
+                                            <a href="https://medium.com/@pacificdefi">Follow our Medium</a>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="(TBD)">YouTube Channel</a> <br>
+                                            <a href="Read our docs">(PENDING)</a> <br>
+                                            <a href="https://github.com/PacificDeFi">Review our code</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1077,7 +1006,7 @@
     <!-- END: FAQ -->
 
     <!-- START: Tokenomics -->
-    <section class="join-our-community" >
+    <section class="join-our-community">
         <div class="container">
             <div class="row bg--palegreen justify-content-center align-items-center p-4 rounded-md">
                 <div class="col-md-6 text-center ">
@@ -1088,12 +1017,14 @@
                     <div class="mt-4">
                         <div class="align-join-community">
                             <button type="button" class="btn btn--accent font-bold btn-lg btn-samer mb-2">WhitePaper</button>
-                            <button type="button" class="btn btn--primary-outline font-bold bg--transparent btn-lg btn-space px-4 mb-2"> 
-                            <a href="https://t.me/pacificdefi" target="_blank" class="btn--hover font-bold text--primary">Join Telegram</a> 
-                            </button>
+                            <a href="https://t.me/pacificdefi" target="_blank" class="btn--hover font-bold text--primary">
+                                <button type="button" class="btn btn--primary-outline font-bold bg--transparent btn-lg btn-space px-4 mb-2"> 
+                                    Join Telegram
+                                </button>
+                            </a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
@@ -1115,13 +1046,12 @@
                             <span class="text-white text-lg font-regular"><a class="mailer" href="mailto:mailto:info@pacific-defi.com">&nbsp; info@pacific-defi.com</a></span>
                         </div>
                         <!-- <div class="h-auto"></div> -->
-                        <div class="d-flex h-50  pb-5 align-items-end justify-content-between">
-                            
-                           <a href="https://twitter.com/PacificDeFi" target="_blank"><img src="assets/images/twitter.svg" width="30" alt="twitter"></a> 
-                           <a href="https://t.me/pacificdefi" target="_blank"><img src="assets/images/telegram.svg" width="30" alt="telegram"></a> 
-                           <a href="https://www.linkedin.com/company/c-pacific-ventures/" target="_blank"><img src="assets/images/linkedin.svg" width="30" alt="linkedin"></a>                           
-                           <a href="https://pacificdefi.medium.com/" target="_blank"><img src="assets/images/medium.svg" width="30" alt="medium"></a>
-                           <a href="https://github.com/PacificDeFi" target="_blank"><img src="assets/images/github.svg" width="30" alt="github"></a> 
+                        <div class="d-flex h-50 align-items-end justify-content-between">
+                            <a href="https://twitter.com/PacificDeFi" target="_blank"><img src="assets/images/twitter.svg" width="30" alt="twitter"></a>
+                            <a href="https://t.me/pacificdefi" target="_blank"><img src="assets/images/telegram.svg" width="30" alt="telegram"></a>
+                            <a href="https://www.linkedin.com/company/c-pacific-ventures/" target="_blank"><img src="assets/images/linkedin.svg" width="30" alt="linkedin"></a>
+                            <a href="https://pacificdefi.medium.com/" target="_blank"><img src="assets/images/medium.svg" width="30" alt="medium"></a>
+                            <a href="https://github.com/PacificDeFi" target="_blank"><img src="assets/images/github.svg" width="30" alt="github"></a>
                         </div>
                     </div>
                 </div>
@@ -1149,10 +1079,10 @@
                             </div>
 
                             <div class="col-12 mt-5">
-                               <div class="btn-align">
-                                <button type="submit" class="btn btn--primary text-base text-white btn-lg ">Send
+                                <div class="btn-align">
+                                    <button type="submit" class="btn btn--primary text-base text-white btn-lg ">Send
                                     message</button>
-                               </div>
+                                </div>
                             </div>
                         </form>
                     </div>

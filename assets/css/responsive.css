@@ -98,6 +98,12 @@
     section {
         padding: 3.25rem 0;
     }
+    .shape-1::after {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+    }
 }
 
 @media(min-width:992px) {
@@ -108,7 +114,6 @@
         text-decoration-color: var(--border-primary-color);
         text-underline-offset: 8px;
     }
-   
     .floating--img {
         bottom: 0;
         right: 15%;
@@ -132,14 +137,18 @@
         border-bottom-right-radius: .75rem;
     }
 }
+
+
 /*home page */
-@media(max-width:2560px){
+
+@media(max-width:2560px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
     }
 }
-@media(max-width:1440px){
+
+@media(max-width:1440px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: .5rem;
@@ -159,27 +168,25 @@
         z-index: -1;
     }
 }
-@media(max-width:1199px){
+
+@media(max-width:1199px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: .75rem;
         padding-left: .75rem;
         font-size: 1rem;
     }
-}
-@media(max-width:991px){
-    .shape-1::after {
-        content: '';
-        display: block;
-        height: 0;
-        width: 0;
+    .btn--launch {
+        padding: 0.5rem;
+        width: 120px;
     }
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
     section {
         padding: 1.25rem 0;
     }
     .shape-1::after {
-        content:'';
+        content: '';
         display: none;
         height: 850px;
         width: 850px;
@@ -194,10 +201,10 @@
     .text-5xl {
         font-size: 2rem;
     }
-    py-5{
+    /* py-5 {
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
-    }
+    } */
     .timeline-item {
         padding: 15px 25px 10px;
     }
@@ -208,24 +215,29 @@
         margin-top: 2rem;
         margin-bottom: 2rem !important;
     }
-    .btn-align{
-        text-align: left;
-    }
-    .first{
+    .first {
         order: 2;
     }
-    .second{
+    .second {
         order: 1;
     }
-    .feauture-sup{
+    .feauture-sup,
+    .btn-align {
         text-align: left;
     }
-}
-@media(max-width:575px){
-    .btn-space{
-        margin:0 10px;
+    .navbar-light {
+        background-color: #fff !important;
     }
-    .aligned-btn{
+    .navbar-brand {
+        width: 80% !important;
+    }
+}
+
+@media(max-width:575px) {
+    .btn-space {
+        margin: 0 10px;
+    }
+    .aligned-btn {
         text-align: center;
     }
     .timeline-info {

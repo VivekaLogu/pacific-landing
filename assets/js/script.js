@@ -38,13 +38,30 @@ $(document).ready(function() {
             // instead of a settings object
         ]
     });
+
+    $('a[href^="#"]').on('click', function(e) {
+        var target = this.hash
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 0
+        }, 1000, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $(".fixed-top").css("background-color", "#FFFFFF");
+        } else {
+            $(".fixed-top").css("background-color", "transparent");
+        }
+    });
 });
 
 // Slick version 1.5.8
 
 (function() {
     'use strict'
-
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
 
@@ -61,15 +78,3 @@ $(document).ready(function() {
             }, false)
         })
 })()
-$(document).ready(function(){
-
-    $('a[href^="#"]').on('click',function (e) {
-        var target = this.hash
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 0
-        }, 1000, 'swing', function () {
-            window.location.hash = target;   
-        });
-    });
-}); 
